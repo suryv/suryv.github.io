@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+body {
+  background-color: #FFFAEA;
+  color:#706f6f;
+  font-family: "Poppins";
+  font-size: 16px
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-column-gap: 16px;
+  max-width: 1680px;
+  /* margin: 0 auto; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer {
+  grid-column: 2 / span 10;
+  margin-top: 32px;
+  /* margin-bottom: 12px; */
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  grid-column: 2 / span 10;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px
+  /* position: sticky;
+  top:35px; */
+}
+
+.header-name{
+  color: #eb5d37;
+  font-size: 32px;
+  font-family: "Lato";
+  font-weight: 600;
+}
+
+.header-name p {
+  margin: 0;
+}
+
+.nav-bar{
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+  font-size: 20px
+  /* width:420px */
+}
+.nav-bar li{
+  list-style-type: none;
+}
+
+a, a:visited { 
+  text-decoration: none; 
+  color:#706f6f
+}
+
+.sub-content {
+  grid-column: 3/span 8;
+  margin-top:40px
+}
+
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -0.5em;
+}
+
+.project-list div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 1;
+  margin: 0 0.5em;
 }
 
-.App-link {
-  color: #61dafb;
+.project-list img {
+  max-width:100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.project-list p {
+  font-weight: 500;
+  margin-top: 0px;
+  font-size: 16px;
 }
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px -0.5em 0 -.5em;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 0.5em;
+}
+
+.about img {
+  max-width:100%;
+}
+
+/* Individual Projects */
+
+.project-content-outer {
+  display: grid;
+  grid-column: 1/span 12;
+  grid-template-columns: repeat(12,1fr);
+  grid-column-gap: 16px;
+  max-width: 1680px;
+  margin-top:40px
+}
+
+.project-content-inner {
+  display: grid;
+  grid-column: 1/span 12;
+  grid-template-columns: repeat(12,1fr);
+  grid-column-gap: 16px;
+}
+
+.project-section {
+  grid-column: 3/span 8;
+}
+
+.ps-flex {
+  display: flex;
+
+}
+
+/* .flex-item:first-child {
+  width: 100%;
+}
+
+.flex-item:not(:first-child) {
+  flex: 1;
+} */
+
+.project-content-inner:nth-child(odd){
+  background-color: #697f41;
+  color:#fffaea
+}
+
+/* Images */
+.lang-app-matrix{
+  width: 50%;
+}
+
+
