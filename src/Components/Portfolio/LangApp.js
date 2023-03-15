@@ -5,7 +5,7 @@ import LangAppMainImg from "../../Assets/langapp_img1.png";
 import LangAppCompAnalysis from "../../Assets/langapp_ca.png";
 import LangAppAffinityMap from "../../Assets/langapp_am.png";
 import LangAppPersona from "../../Assets/langapp_persona.png";
-import LangAppMatrix from "../../Assets/langapp_matrix.jpg";
+import LangAppMatrix from "../../Assets/langapp_matrix.png";
 import LangAppWireFrames from "../../Assets/imagefiller.jpg";
 
 const LangApp= () => {
@@ -118,8 +118,8 @@ const LangApp= () => {
               </ul>
             </div>
           </div>  
-          <div className="flex-item">
-            <img src={LangAppMatrix}  alt="feature matrix" className="lang-app-ca lang-app-matrix" />
+          <div className="flex-item lang-app-ca lang-app-matrix" >
+            <img src={LangAppMatrix}  alt="feature matrix" />
           </div>
         </div>
           
