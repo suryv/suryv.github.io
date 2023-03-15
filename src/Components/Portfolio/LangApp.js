@@ -1,10 +1,10 @@
 import '../../App.css';
 
 import ProjectImageFiller from "../../Assets/projectimagefiller.jpg";
-import LangAppMainImg from "../../Assets/langapp_img1.jpg";
-import LangAppCompAnalysis from "../../Assets/langapp_ca.jpg";
-import LangAppAffinityMap from "../../Assets/imagefiller.jpg";
-import LangAppPersona from "../../Assets/langapp_persona.jpg";
+import LangAppMainImg from "../../Assets/langapp_img1.png";
+import LangAppCompAnalysis from "../../Assets/langapp_ca.png";
+import LangAppAffinityMap from "../../Assets/langapp_am.png";
+import LangAppPersona from "../../Assets/langapp_persona.png";
 import LangAppMatrix from "../../Assets/langapp_matrix.jpg";
 import LangAppWireFrames from "../../Assets/imagefiller.jpg";
 
@@ -42,23 +42,23 @@ const LangApp= () => {
       {/* Third section: Research Analysis */}
       <div class="project-content-inner">
         <div className="project-section">
-          <div className="flex-item"><h2>Research and Analysis</h2></div>
+          <div className="flex-item"><h2>Research and Insights</h2></div>
             <div>My research consisted of two parts: Competitive Analysis and User Interviews.</div>
             <div>
-              <p className="sub-cat">Competitive Analysis</p>
+              <h4 className="sub-cat">Competitive Analysis</h4>
               As there are plenty of language learning apps available for students to use, my research first focused on competitive analysis against the most popular language learning apps to find any gaps in their features and any opportunities for improvement.
-              <div>
-                <img src={LangAppCompAnalysis}  alt="competitor analysis" className="lang-app-ca" />
+              <div className="lang-app-ca" >
+                <img src={LangAppCompAnalysis}  alt="competitor analysis"/>
               </div>
               From this research, I found that many of the apps failed to include any meaningful student to student interaction.
             </div>
           <div>
             <div>
-              <p className="sub-cat">User Interviews</p>
+              <h4 className="sub-cat">User Interviews</h4>
               After analysing existing language apps, I turned to User Interviews to discover what students actually need when learning a language. My goal was to understand their methods of learning, study habits, motivations and pain points. I interviewed 5 students enrolled in a foreign language class at a community college and analysed their responses to find common themes.
             </div>
-            <div>
-              <img src={LangAppAffinityMap}  alt="affinity map" className="lang-app-ca" />
+            <div className="lang-app-ca">
+              <img src={LangAppAffinityMap}  alt="affinity map"/>
             </div>
             <div>
               The data from these interviews revealed that students:
@@ -80,8 +80,8 @@ const LangApp= () => {
           <div className="flex-item"><h2>Persona</h2></div>
           <div>Meet Jordan! To help me focus my efforts to help language students, I used the insights I gathered from my 5 interviewees and created one persona to represent them all.
           </div>
-          <div>
-            <img src={LangAppPersona}  alt="persona" className="lang-app-ca" />
+          <div className="lang-app-ca" >
+            <img src={LangAppPersona}  alt="persona" />
           </div>
         </div>
       </div>
@@ -92,11 +92,11 @@ const LangApp= () => {
           <div>
             The insights from my research and a persona to represent my target audience help define the challenge my target audience faces and synthesize the problem I am solving for.
             
-            <p className="sub-cat">The Challenge</p>
+            <h4 className="sub-cat">The Challenge</h4>
             Foreign language students want to become fluent in their target language but feel unmotivated to learn their target language because learning alone or with a textbook can be boring and can make the student feel detached from their target language. Language learning apps available are repetitive and focus on teaching the basics, making students lose interest quickly.
           </div>
           <div>
-            <p className="sub-cat">The Problem</p>
+            <h4 className="sub-cat">The Problem</h4>
             Students learning a foreign language need a fun, interactive, personalized environment to motivate them to continue learning their target language and reach their desired fluency level because available language apps, textbooks, and lack of study buddies make it difficult for them to do so.
           </div>
         </div>

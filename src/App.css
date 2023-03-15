@@ -112,7 +112,7 @@ a, a:visited {
   grid-column: 1/span 12;
   grid-template-columns: repeat(12,1fr);
   grid-column-gap: 16px;
-  max-width: 1680px;
+  /* max-width: 1680px; */
   margin-top:40px
 }
 
@@ -140,7 +140,7 @@ a, a:visited {
   flex: 1;
 } */
 
-.project-content-inner:nth-child(odd){
+.project-content-inner:nth-child(even){
   background-color: #697f41;
   color:#fffaea
 }
@@ -148,6 +148,20 @@ a, a:visited {
 /* Images */
 .lang-app-matrix{
   width: 50%;
+}
+
+.project-main-pic img {
+  border-radius: 20px
+}
+
+.lang-app-ca{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom:20px
+}
+
+.lang-app-ca img{
+  border-radius:20px
 }
 
 
