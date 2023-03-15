@@ -1,19 +1,20 @@
 import '../../App.css';
 
-import ProjectImageFiller from "../../Assets/projectimagefiller.jpg";
 import LangAppMainImg from "../../Assets/langapp_img1.png";
 import LangAppCompAnalysis from "../../Assets/langapp_ca.png";
 import LangAppAffinityMap from "../../Assets/langapp_am.png";
 import LangAppPersona from "../../Assets/langapp_persona.png";
 import LangAppMatrix from "../../Assets/langapp_matrix.png";
-import LangAppWireFrames from "../../Assets/imagefiller.jpg";
+import LangAppWireFrames from "../../Assets/langapp_lofiwf.png";
+import LangAppMidFiWF from "../../Assets/langapp_midfiwf.png";
+import LangAppHiFiWF from "../../Assets/langapp_hifiwf.png";
 
 const LangApp= () => {
   return (
     <div className="project-content-outer lang-app">
       {/* First section Intro*/}
       <div className="project-content-inner">
-        <div className="project-section ps-flex">
+        <div className="project-section ps-flex lang-app-first">
           <div className="flex-item"><h1>Polyglot</h1>
             <p>Polyglot is an interactive language practice app with a game-like approach that connects language learners with others learning the same language. Language learners with different learning styles and interests can benefit from a variety of topics and methods of learning to help with maintaing modivation.</p>
             <ul>
@@ -47,7 +48,7 @@ const LangApp= () => {
             <div>
               <h4 className="sub-cat">Competitive Analysis</h4>
               As there are plenty of language learning apps available for students to use, my research first focused on competitive analysis against the most popular language learning apps to find any gaps in their features and any opportunities for improvement.
-              <div className="lang-app-ca" >
+              <div className="lang-app-img" >
                 <img src={LangAppCompAnalysis}  alt="competitor analysis"/>
               </div>
               From this research, I found that many of the apps failed to include any meaningful student to student interaction.
@@ -57,7 +58,7 @@ const LangApp= () => {
               <h4 className="sub-cat">User Interviews</h4>
               After analysing existing language apps, I turned to User Interviews to discover what students actually need when learning a language. My goal was to understand their methods of learning, study habits, motivations and pain points. I interviewed 5 students enrolled in a foreign language class at a community college and analysed their responses to find common themes.
             </div>
-            <div className="lang-app-ca">
+            <div className="lang-app-img">
               <img src={LangAppAffinityMap}  alt="affinity map"/>
             </div>
             <div>
@@ -80,7 +81,7 @@ const LangApp= () => {
           <div className="flex-item"><h2>Persona</h2></div>
           <div>Meet Jordan! To help me focus my efforts to help language students, I used the insights I gathered from my 5 interviewees and created one persona to represent them all.
           </div>
-          <div className="lang-app-ca" >
+          <div className="lang-app-img" >
             <img src={LangAppPersona}  alt="persona" />
           </div>
         </div>
@@ -118,7 +119,7 @@ const LangApp= () => {
               </ul>
             </div>
           </div>  
-          <div className="flex-item lang-app-ca lang-app-matrix" >
+          <div className="flex-item lang-app-img lang-app-matrix" >
             <img src={LangAppMatrix}  alt="feature matrix" />
           </div>
         </div>
@@ -142,8 +143,8 @@ const LangApp= () => {
             These sketches turned into mid-fidelity wireframes, allowing me to create a prototype for testing two features that focused on user interacting with other users: 1) Breaking the ice while chatting with a friend and 2) creating quizzes for other users. With the help of moderated testing using 5 testers, I was able to see the weaknesses and strengths of my intial designs.
           </div>
           {/* Image of wireframes */}
-          <div>
-            <img src={LangAppWireFrames}  alt="wireframes" className="lang-app-ca" />
+          <div className="lang-app-img">
+            <img src={LangAppWireFrames}  alt="wireframes" />
           </div>
           {/* Outcomes of testing */}
           <div>The first round of testing provided these insights:
@@ -156,8 +157,8 @@ const LangApp= () => {
           <div>
             The feedback on the first prototype was discouraging. I decided to go back to the drawing board and start my designs from scratch keeping in mind the feedback, the list of features, and "How might we...." statements. Going back to the "How might we...." statements, I knew that in order to address these, the features had to be fun, approachable, interactive, and meaningful. My approach then turned to gamifying the learning experience. I decided to focus more on creating a fun competative environment for language learners with content provided by the app. I created mid-fidelity wireframes and prototypes to test two features: 1) competing in fun games with other learners and 2) practicing grammar. 
           </div>
-          <div>
-            <img src={LangAppWireFrames}  alt="wireframes" className="lang-app-ca" />
+          <div  className="lang-app-img">
+            <img src={LangAppMidFiWF}  alt="wireframes"/>
           </div>
           <div>A round of moderated testing with the same 5 test users provided these insights:
             <ul>
@@ -176,8 +177,8 @@ const LangApp= () => {
             <div className="flex-item"><h2>High Def and Unmoderated Testing</h2></div>
             After taking all the findings from the moderated usability testing into consideration, I made changes to the Battle feature and the Grammar Practice feature to improve their usability and clarity.
           </div>
-          <div>
-            <img src={LangAppWireFrames}  alt="wireframes" className="lang-app-ca" />
+          <div className="lang-app-img">
+            <img src={LangAppHiFiWF}  alt="wireframes"/>
           </div>
         </div>
       </div>
