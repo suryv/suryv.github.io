@@ -26,9 +26,8 @@ const Portfolio = () => {
           <p>Project Name Here</p>
         </div>
         <div className="project">
-          <Link to="/Portfolio/LangApp"><img src={project_img3}  alt="example" className="projectImageLink" />
-          </Link>
-          <p>Project Name Here</p>
+          <a href="https://dribbble.com/sury_villalobos" target="_blank" rel="noreferrer"><img src={project_img3}  alt="example" className="projectImageLink" /></a>
+          <p>See my work on Dribble</p>
         </div>
       </div>
     </div>

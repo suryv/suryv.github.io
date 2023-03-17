@@ -1,11 +1,19 @@
 body {
-  background-color: #FFFAEA;
-  color:#686868;
+  background-color: #fffff8;
+  color:#5d5d5d;
   font-family: "Poppins";
-  font-size: 16px
+  font-size: 16px;
+  cursor: default;
+  text-align: justify;
 }
 
-h2, h4 {
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.15em;
   font-weight: 500;
 }
 
@@ -35,10 +43,10 @@ h2, h4 {
 }
 
 .header-name{
-  color: #eb5d37;
-  font-size: 32px;
-  font-family: "Lato";
-  font-weight: 600;
+  color: #b38f2d;
+  font-size: 2.5em;
+  font-family: "Mulish";
+  letter-spacing: .1rem
 }
 
 .header-name p {
@@ -58,7 +66,7 @@ h2, h4 {
 
 a, a:visited { 
   text-decoration: none; 
-  color:#706f6f
+  color:#515151
 }
 
 .sub-content {
@@ -127,9 +135,18 @@ a, a:visited {
   grid-column-gap: 16px;
 }
 
+.project-section-header{
+  grid-column: 3/span 8
+}
+
 .project-section {
   grid-column: 3/span 8;
   margin:20px 0 40px 0
+}
+
+.project-content-inner:nth-child(even){
+  background-color: #697f41;
+  color:#fffaea
 }
 
 .ps-flex {
@@ -137,22 +154,29 @@ a, a:visited {
 
 }
 
-/* .flex-item:first-child {
-  width: 100%;
+.flex-item.project-intro {
+  flex: 1 1 54%;
+  margin-right: 28px;
 }
 
-.flex-item:not(:first-child) {
-  flex: 1;
-} */
+.flex-item.project-intro p {
+  text-align: justify;
+  margin-top: 0px
+}
 
-.project-content-inner:nth-child(even){
-  background-color: #697f41;
-  color:#fffaea
+.project-section.ps-flex.lang-app-fifth{
+  margin-top:0px
+}
+
+.flex-item.lang-app-feature {
+  flex: 1 1 54%;
+  margin-right: 28px;
 }
 
 /* Images */
 .project-main-pic img {
-  border-radius: 20px
+  border-radius: 20px;
+  width: 100%;
 }
 
 .lang-app-img{
