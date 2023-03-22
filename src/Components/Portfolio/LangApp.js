@@ -8,6 +8,7 @@ import LangAppMatrix from "../../Assets/langapp_matrix.png";
 import LangAppWireFrames from "../../Assets/langapp_lofiwf.png";
 import LangAppMidFiWF from "../../Assets/langapp_midfiwf.png";
 import LangAppHiFiWF from "../../Assets/langapp_hifiwf.png";
+import LangAppFinal from "../../Assets/langapp_final.png";
 
 const LangApp= () => {
   return (
@@ -176,10 +177,43 @@ const LangApp= () => {
         <div className="project-section">
           <div>
             <div className="flex-item"><h2>High Def and Unmoderated Testing</h2></div>
-            After taking all the findings from the moderated usability testing into consideration, I made changes to the Battle feature and the Grammar Practice feature to improve their usability and clarity. 
+            After taking all the findings from the moderated usability testing into consideration, I made changes to the Battle feature and the Grammar Practice feature to improve their usability and clarity. I used Maze.co to conduct a round of unmoderated testing with the same 5 test users as before.  
           </div>
           <div className="lang-app-img">
             <img src={LangAppHiFiWF}  alt="wireframes"/>
+          </div>
+          {/* Outcomes of testing */}
+          <div>Testing insights:
+            <ul>
+              <li>All users need clear indication of how long they have until a battle begins </li>
+              <li>Most users felt they did something wrong when Challenging a friend to a battle because the redirect to the Battles landing page did not feel any different than selecting the Battles menu option</li>
+              <li>The app needs to indicate when a user is online and available to participate in a battle</li>
+              <li>The Grammar Practice was still unclear on the duration of the practice experience</li>
+              <li>All users thought the "Back" functionality was not clear because they didn't know what place in the experience "Back" refered to</li>
+            </ul>
+          </div>
+          <div className="lang-app-img">
+            <img src={LangAppFinal}  alt="wireframes"/>
+          </div>
+        </div>
+      </div>
+      {/* Eight section: Final */}
+      <div className="project-content-inner">
+        <div className="project-section">
+          <div>
+            <div className="flex-item"><h2>Final Iteration</h2></div>
+            I created a final iteration of my designs based on the results from the unmoderated testing. 
+            <div>Changes I made:
+            <ul>
+              <li>Added an Online feature to indicate that the user is online and available for Battles</li>
+              <li>Added a countdown to tell users how long they have before the battle starts</li>
+              <li>Added a pop up prompting users to select the battle they want to challege their friends to instead or redirecting them to the Battles landing page</li>
+              <li>Added an Exit button to the Grammar practice experience as well as a progress bar to indicate how many practice questions a user has</li>
+            </ul>
+          </div>
+          </div>
+          <div className="lang-app-img">
+            <img src={LangAppFinal}  alt="wireframes"/>
           </div>
         </div>
       </div>
