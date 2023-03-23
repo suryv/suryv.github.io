@@ -67,7 +67,7 @@ const LangApp= () => {
               The data from these interviews revealed that students:
               <ul>
                 <li>Find studying boring</li>
-                <li>Like practicing with one other person or in small groups</li>
+                <li>Like the social aspect of working in small groups</li>
                 <li>Count consuming media in their target language towards their study time</li>
                 <li>Find learning the grammar of their target language difficult</li>
                 <li>Stop learning languages when they do not have any connection to the language</li>
@@ -192,9 +192,6 @@ const LangApp= () => {
               <li>All users thought the "Back" functionality was not clear because they didn't know what place in the experience "Back" refered to</li>
             </ul>
           </div>
-          <div className="lang-app-img">
-            <img src={LangAppFinal}  alt="wireframes"/>
-          </div>
         </div>
       </div>
       {/* Eight section: Final */}
@@ -202,18 +199,37 @@ const LangApp= () => {
         <div className="project-section">
           <div>
             <div className="flex-item"><h2>Final Iteration</h2></div>
-            I created a final iteration of my designs based on the results from the unmoderated testing. 
-            <div>Changes I made:
+            <div>I created a final iteration of my designs based on the results from the unmoderated testing.</div> 
+            <div>Some of the changes I made were the following:
             <ul>
-              <li>Added an Online feature to indicate that the user is online and available for Battles</li>
+              <li>Added an Online feature to indicate that the user is online and available to battle</li>
               <li>Added a countdown to tell users how long they have before the battle starts</li>
-              <li>Added a pop up prompting users to select the battle they want to challege their friends to instead or redirecting them to the Battles landing page</li>
+              <li>Removed the redirect to the Battles landing page from the friends page and implemented a pop up feature instead</li>
               <li>Added an Exit button to the Grammar practice experience as well as a progress bar to indicate how many practice questions a user has</li>
             </ul>
           </div>
           </div>
           <div className="lang-app-img">
             <img src={LangAppFinal}  alt="wireframes"/>
+          </div>
+        </div>
+      </div>
+      {/* Ninth section: Conclusion */}
+      <div className="project-content-inner">
+        <div className="project-section">
+          <div>
+            <div className="flex-item"><h2>Conclusion</h2></div>
+            <div>
+            It is not easy to learn a language, especially on your own. Most language apps available are repetitive, rarely cover grammar, and they do not offer meaningful interaction between users. An app that focuses on user interaction through fun and competitive games and focuses on making grammar more approachable keeps language learners motivated and excited to continue learning.  
+            </div> 
+            <h4 className="sub-cat">What I would do differently</h4>
+            <div>As this was my first UX project, I learned a lot. Some things I would do differently for an MVP:
+            <ul>
+              <li>I would prioritize one or two features to develop instead of many. Addressing too many user needs at one made me feel like the project lacked focus and direction.</li>
+              <li>I would focus on creating user flows to better understand how users will interact with a feature.</li>
+              <li>I would be more specific in creating a persona. Although Jordan is a good representative of the target audience, explicitly calling out students as the target audience would have helped me think of more ideas to better help this group of people. This app would have more value if it was developed as an extention of a textbook.</li>
+            </ul>
+            </div>
           </div>
         </div>
       </div>
