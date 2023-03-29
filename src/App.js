@@ -35,7 +35,14 @@ function App() {
           </Routes>
         </Router>
         <div className="footer">
-          Designed and built by Sury Villalobos
+          <div className="footer-contact">
+            <div><a href="suryvlobos@gmail.com"></a>Email</div>
+            <div>|</div>
+            <div><a href="https://www.linkedin.com/in/sarahivillalobos/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+            <div>|</div>
+            <div><a href="https://dribbble.com/sury_villalobos" target="_blank" rel="noreferrer">Dribble</a></div>
+          </div>
+          <div>Designed and built by Sury Villalobos</div>
         </div>
     </div>
     

@@ -33,9 +33,19 @@ h4 {
 .footer {
   grid-column: 2 / span 10;
   font-size: 16px;
+  display: flex;
   /* margin:1em;
   position: absolute;
   bottom:0; */
+}
+
+.footer-contact{
+  flex: 1 1;
+  display: flex;
+}
+
+.footer-contact div{
+  margin: 0px 20px 0px 0px
 }
 
 .header {
@@ -80,6 +90,12 @@ a, a:visited {
   margin-top:40px
 }
 
+.sub-content.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px
+}
 
 .project-list {
   display: flex;
@@ -157,7 +173,7 @@ a, a:visited {
   max-width:100%;
 }
 
-/* Individual Projects */
+/* ///////////////////////////////////Individual Projects/////////////////////////////// */
 
 .project-content-outer {
   display: grid;
