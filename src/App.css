@@ -58,8 +58,8 @@ h4 {
   top:35px; */
 }
 
-.header-name{
-  color: #b38f2d;
+.header-name a, .header-name a:visited {
+  color: #b38f2d !important;
   font-size: 2.5em;
   font-family: "Mulish";
   letter-spacing: .1rem

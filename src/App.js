@@ -14,8 +14,6 @@ import Header from "./Components/Header";
 import Portfolio from "./Components/Portfolio";
 // import About component
 import About from "./Components/About";
-// import Contact component
-import Contact from "./Components/Contact";
 
 // import Projects
 import LangApp from "./Components/Portfolio/LangApp"
@@ -36,7 +34,7 @@ function App() {
         </Router>
         <div className="footer">
           <div className="footer-contact">
-            <div><a href="suryvlobos@gmail.com"></a>Email</div>
+            <div><a href="mailto:suryvlobos@gmail.com">Email</a></div>
             <div>|</div>
             <div><a href="https://www.linkedin.com/in/sarahivillalobos/" target="_blank" rel="noreferrer">LinkedIn</a></div>
             <div>|</div>
