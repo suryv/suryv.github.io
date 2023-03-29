@@ -19,17 +19,23 @@ h4 {
 
 .main-content {
   display: grid;
+  grid-template-areas: 
+    "header header header"
+    "content content content"
+    "footer footer footer";
+  grid-template-rows: 8em 1fr 2.5em;  
   grid-template-columns: repeat(12,1fr);
-  grid-column-gap: 16px;
-  /* max-width: 1680px; */
-  /* margin: 0 auto; */
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
 }
 
 .footer {
   grid-column: 2 / span 10;
-  margin-top: 32px;
-  /* margin-bottom: 12px; */
   font-size: 16px;
+  /* margin:1em;
+  position: absolute;
+  bottom:0; */
 }
 
 .header {
@@ -82,11 +88,45 @@ a, a:visited {
   margin: 0 -0.5em;
 }
 
-.project-list div {
+.project-list .project {
   display: flex;
   flex-direction: column;
   flex: 1;
   margin: 0 0.5em;
+  position: relative;
+}
+
+.img-description-layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(255 255 249 / 75%);
+  color: #5d5d5d;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.project:hover .img-description-layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img-description {
+  transition: .2s;
+  transform: translateY(1em);
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.project:hover .img-description {
+  transform: translateY(0);
 }
 
 .project-list img {
@@ -190,5 +230,4 @@ a, a:visited {
   max-width: 100%;
   height: auto;
 }
-
 

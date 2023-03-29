@@ -2,36 +2,75 @@ import '../App.css';
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import project_img1 from "../Assets/project_img1.jpg";
+import project_img1 from "../Assets/project_img_langapp.png";
 import project_img2 from "../Assets/project_img2.jpg";
 import project_img3 from "../Assets/project_img3.jpg";
 
 
+// // Toggle Image on Hover
+// import React,{ useRef }  from 'react';
+// import project_img1a from "../Assets/project_img1.jpg";
+// const ImageToggleOnMouseOver = ({primaryImg, secondaryImg}) => {
+//   const imageRef = useRef();
+//   return (
+//     <img 
+//       onMouseOver={() => {
+//         imageRef.current.src = secondaryImg;
+//       }}
+//       onMouseOut={() => {
+//         imageRef.current.src= primaryImg;
+//       }}
+//       src={primaryImg}
+//       className="projectImageLink"
+//       alt=""
+//       ref={imageRef}
+//     />
+//   )
+// }
+// <div className="project">
+//             <Link to="/Portfolio/LangApp"><ImageToggleOnMouseOver
+//               primaryImg={project_img2}
+//               secondaryImg={project_img1a}
+//               alt=""
+//               />
+//             </Link>
+//           </div> 
+
+
 const Portfolio = () => {
-  return (
-    <div className="sub-content portfolio">
-      <div>
-        <p>UX designer and frontend developer</p>
+    return (
+      <div className="sub-content portfolio">
+      {/* Link Projects */}
+        <div className="project-list">
+          <div className="project">
+            <Link to="/Portfolio/LangApp" >
+              <img src={project_img1}  alt="project" className="project-image-filler" />
+                <div class="img-description-layer">
+                  <div class="img-description">Language App</div>
+                </div>
+            </Link>
+          </div>
+
+          <div className="project test">
+            <Link to="/Portfolio/LangApp">
+              <img src={project_img2}  alt="project" className="project-image-filler" />
+              <div class="img-description-layer">
+                <div class="img-description">Coming Soon!</div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="project">
+            <a href="https://dribbble.com/sury_villalobos" target="_blank" rel="noreferrer">
+              <img src={project_img3}  alt="project" className="project-image-filler" />
+                <div class="img-description-layer">
+                  <div class="img-description">See my work on Dribble!</div>
+                </div>
+            </a>
+          </div>
+        </div>
       </div>
-    {/* Link Projects */}
-      <div className="project-list">
-        <div className="project">
-          <Link to="/Portfolio/LangApp"><img src={project_img1}  alt="example" className="projectImageLink" />
-          </Link>
-          <p>Language App</p>
-        </div>
-        <div className="project">
-          <Link to="/Portfolio/LangApp"><img src={project_img2}  alt="example" className="projectImageLink" />
-          </Link>
-          <p>Project Name Here</p>
-        </div>
-        <div className="project">
-          <a href="https://dribbble.com/sury_villalobos" target="_blank" rel="noreferrer"><img src={project_img3}  alt="example" className="projectImageLink" /></a>
-          <p>See my work on Dribble</p>
-        </div>
-      </div>
-    </div>
-  ); 
-}
+    ); 
+  }
 
 export default Portfolio;
