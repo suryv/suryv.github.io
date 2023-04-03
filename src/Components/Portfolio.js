@@ -46,7 +46,7 @@ const Portfolio = () => {
             <Link to="/Portfolio/LangApp" >
               <img src={project_img1}  alt="project" className="project-image-filler" />
                 <div class="img-description-layer">
-                  <div class="img-description">Language App</div>
+                  <div class="img-description">Reto</div>
                 </div>
             </Link>
           </div>
