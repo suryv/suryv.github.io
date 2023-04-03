@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import project_img1 from "../Assets/project_img_langapp.png";
 import project_img2 from "../Assets/project_img2.jpg";
-import project_img3 from "../Assets/project_img3.jpg";
+import project_img3 from "../Assets/project_img_dribble_logo.png";
 
 
 // // Toggle Image on Hover
@@ -51,6 +51,15 @@ const Portfolio = () => {
             </Link>
           </div>
 
+          <div className="project">
+            <a href="https://dribbble.com/sury_villalobos" target="_blank" rel="noreferrer">
+              <img src={project_img3}  alt="project" className="project-image-filler" />
+                <div class="img-description-layer">
+                  <div class="img-description">See my work on Dribbble!</div>
+                </div>
+            </a>
+          </div>
+
           <div className="project test">
             <Link to="/Portfolio/LangApp">
               <img src={project_img2}  alt="project" className="project-image-filler" />
@@ -60,14 +69,6 @@ const Portfolio = () => {
             </Link>
           </div>
 
-          <div className="project">
-            <a href="https://dribbble.com/sury_villalobos" target="_blank" rel="noreferrer">
-              <img src={project_img3}  alt="project" className="project-image-filler" />
-                <div class="img-description-layer">
-                  <div class="img-description">See my work on Dribble!</div>
-                </div>
-            </a>
-          </div>
         </div>
       </div>
     ); 

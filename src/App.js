@@ -34,11 +34,11 @@ function App() {
         </Router>
         <div className="footer">
           <div className="footer-contact">
-            <div><a href="mailto:suryvlobos@gmail.com">Email</a></div>
+            <div><a href="mailto:suryvlobos@gmail.com">suryvlobos@gmail.com</a></div>
             <div>|</div>
             <div><a href="https://www.linkedin.com/in/sarahivillalobos/" target="_blank" rel="noreferrer">LinkedIn</a></div>
             <div>|</div>
-            <div><a href="https://dribbble.com/sury_villalobos" target="_blank" rel="noreferrer">Dribble</a></div>
+            <div><a href="https://dribbble.com/sury_villalobos" target="_blank" rel="noreferrer">Dribbble</a></div>
           </div>
           <div>Designed and built by Sury Villalobos</div>
         </div>

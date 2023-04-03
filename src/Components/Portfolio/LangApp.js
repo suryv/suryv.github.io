@@ -15,10 +15,10 @@ const LangApp= () => {
     <div className="project-content-outer lang-app">
       {/* First section Intro*/}
       <div className="project-content-inner">
-        <div className="project-section-header"><h1>Platicar</h1></div>
+        <div className="project-section-header"><h1>Reto</h1></div>
         <div className="project-section ps-flex lang-app-first">
           <div className="flex-item project-intro">
-            <p>Platicar is a language practice app with a game-like approach that connects people learning foreign languages. Users with different learning styles and interests can benefit from a variety of topics and methods of learning to help with maintaining motivation.</p>
+            <p>Reto is a language practice app with a game-like approach that connects people learning foreign languages. Users with different learning styles and interests can benefit from a variety of topics and methods of learning to help with maintaining motivation.</p>
             <ul>
                 <li>Concept</li>
                 <li>Solo Project</li>
@@ -37,7 +37,7 @@ const LangApp= () => {
       <div className="project-content-inner">
         <div className="project-section">
           <div className="flex-item"><h2>Background</h2>
-            <p>I developed Platicar as my final project for General Assembly's UX Design course. We were asked to design an app to solve a problem of our liking. I like learning languages but find it difficult to practice what I know. For me, language apps are not very helpful and I struggle with motivation to practice. I knew I was not the only one that felt this way so I chose to design an app that helps people practice the language they are learning. My goal for this project was to find the gaps in current language apps and combine those findings with what language learners need to keep them motivated in the learning journey.
+            <p>I developed Reto as my final project for General Assembly's UX Design course. We were asked to design an app to solve a problem of our liking. I like learning languages but find it difficult to practice what I know. For me, language apps are not very helpful and I struggle with motivation to practice. I knew I was not the only one that felt this way so I chose to design an app that helps people practice the language they are learning. My goal for this project was to find the gaps in current language apps and combine those findings with what language learners need to keep them motivated in their learning journey.
             </p>
             </div>
           </div>
