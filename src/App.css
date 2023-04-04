@@ -48,6 +48,13 @@ h4 {
   margin: 0px 20px 0px 0px
 }
 
+a, a:visited { 
+  text-decoration: none; 
+  color:#515151
+}
+
+/* ////////////////////////////////////////Header & Nav////////////////////////////////////////// */
+
 .header {
   grid-column: 2 / span 10;
   grid-row: 1;
@@ -70,19 +77,28 @@ h4 {
 }
 
 .nav-bar{
-  display: flex;
-  width: 180px;
-  justify-content: space-between;
   font-size: 20px
-  /* width:420px */
 }
+
 .nav-bar li{
   list-style-type: none;
 }
 
-a, a:visited { 
-  text-decoration: none; 
-  color:#515151
+.nav-bar .nav-p{
+  margin-right: 20px
+}
+
+
+.nav-bar a:hover, .footer a:hover, .contact a:hover {
+  color: #b38f2d;
+}
+
+.nav-bar a.active {
+  border-bottom: 2px solid #515151;
+}
+
+.nav-bar a.active:hover {
+  border-bottom: 2px solid #b38f2d;
 }
 
 .sub-content {
@@ -155,6 +171,8 @@ a, a:visited {
   font-size: 16px;
 }
 
+/* ////////////////////////////////////////About////////////////////////////////////////// */
+
 .about {
   display: flex;
   flex-wrap: wrap;
@@ -165,12 +183,16 @@ a, a:visited {
 .about-content {
   display: flex;
   flex-direction: column;
-  flex: 1;
   margin: 0 0.5em;
 }
 
 .about img {
   max-width:100%;
+}
+
+.about-content.about-img div {
+  font-size: 12px;
+  text-align: center;
 }
 
 /* ///////////////////////////////////Individual Projects/////////////////////////////// */
