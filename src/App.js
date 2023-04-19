@@ -8,15 +8,15 @@ import {
   Navigate
 } from "react-router-dom";
 
-// import Nav Bar
+//Import pages for Router
 import Header from "./Components/Header";
-// import Portfolio component
 import Portfolio from "./Components/Portfolio";
-// import About component
 import About from "./Components/About";
+import Footer from "./Components/Footer";
 
 // import Projects
 import LangApp from "./Components/Portfolio/LangApp"
+import StarbucksSharedPoints from "./Components/Portfolio/StarbucksSharedPoints"
 
 function App() {
   return (
@@ -26,22 +26,13 @@ function App() {
           <Routes>
             <Route path="/Portfolio" element={<Portfolio/>} />
               <Route path="/Portfolio/LangApp" element={<LangApp />} /> 
+              <Route path="/Portfolio/StarbucksSharedPoints" element={<StarbucksSharedPoints />} /> 
             <Route path="/About" element={<About/>} />
-            {/* <Route path="/Contact" element={<Contact/>} /> */}
             <Route from="/" element={<Portfolio/>}/>
             <Route exact path="/" element={<Navigate to="/Portfolio"/>} />
           </Routes>
         </Router>
-        <div className="footer">
-          <div className="footer-contact">
-            <div><a href="mailto:suryvlobos@gmail.com">suryvlobos@gmail.com</a></div>
-            <div>|</div>
-            <div><a href="https://www.linkedin.com/in/sarahivillalobos/" target="_blank" rel="noreferrer">LinkedIn</a></div>
-            <div>|</div>
-            <div><a href="https://dribbble.com/sury_villalobos" target="_blank" rel="noreferrer">Dribbble</a></div>
-          </div>
-          <div>Designed and built by Sury Villalobos</div>
-        </div>
+        <Footer />
     </div>
     
   );

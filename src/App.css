@@ -217,6 +217,10 @@ a, a:visited {
   grid-column: 3/span 8
 }
 
+.project-header {
+  grid-column: 3/span 8
+}
+
 .project-section {
   grid-column: 3/span 8;
   margin:20px 0 40px 0
@@ -268,4 +272,8 @@ a, a:visited {
   max-width: 100%;
   height: auto;
 }
+
+
+
+/* ///////////////////////////////////Starbucks Projects/////////////////////////////// */
 
