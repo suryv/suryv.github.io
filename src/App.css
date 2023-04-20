@@ -277,3 +277,77 @@ a, a:visited {
 
 /* ///////////////////////////////////Starbucks Projects/////////////////////////////// */
 
+
+.project-container {
+    display: grid;
+    grid-column: 1/span 12;
+    grid-template-columns: repeat(12,1fr);
+    grid-column-gap: 16px;
+    margin-top: 40px;
+}
+
+
+.project-section-outer {
+    display: grid;
+    grid-column: 1/span 12;
+    grid-template-columns: repeat(12,1fr);
+    grid-column-gap: 16px;
+} 
+
+.project-section-outer:nth-child(even) {
+  background-color: #697f41;
+  color: #fffaea;
+}
+
+.project-section-inner {
+  grid-column: 3/span 8;
+}
+
+.project-intro .section-header {
+  margin-bottom: 40px;
+}
+
+.sc-flex-horizontal {
+  display: flex
+}
+
+.project-intro .sc-flex-item {
+  flex: 1 1 50%;
+  margin-right: 28px;
+} 
+
+.project-intro p {
+  margin-top:0px;
+  text-align: justify
+}
+
+.project-intro-img img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.section-content{
+  margin: 20px 0 40px 0
+}
+
+
+.picture-inner-width {
+  width:100%
+}
+
+.sb-sketch-container  {
+  display:flex;
+  flex-direction: row;
+  margin: 0 -0.5em;
+}
+
+.sb-sketch-container div {
+  flex: 1 1;
+  margin: 0 0.5em;
+}
+
+.sb-sketch-container img {
+  max-width: 100%
+}
+
+

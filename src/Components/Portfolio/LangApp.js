@@ -22,10 +22,10 @@ const LangApp= () => {
             <ul>
                 <li>Concept</li>
                 <li>Solo Project</li>
-                <li>Role: UX/UI Designer</li>
+                <li>Role: UX/UI Designer, Researcher</li>
                 <li>Timeline: May - July 2022</li>
                 <li>Platform: Mobile</li>
-                <li>Tools: Figma, Maze Remote Testing, Zoom</li>
+                <li>Tools: Figma, Maze Remote Testing</li>
               </ul>
           </div>
           <div className="flex-item project-main-pic">
