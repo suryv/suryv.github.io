@@ -5,6 +5,14 @@ import SBMap from "../../Assets/sb_map.png";
 import SBSketch1 from "../../Assets/sb_sketch1.png"
 import SBSketch2 from "../../Assets/sb_sketch2.png"
 import SBSketch3 from "../../Assets/sb_sketch3.png"
+import SBStoryboard1 from "../../Assets/sb_storyboard1.png"
+import SBStoryboard2 from "../../Assets/sb_storyboard2.png"
+import SBStoryboard3 from "../../Assets/sb_storyboard3.png"
+import SBStoryboard4 from "../../Assets/sb_storyboard4.png"
+import SBFlow from "../../Assets/sb_flows1.png"
+import SBLoFi from "../../Assets/sb_lofi.png"
+
+
 
 const StarbucksSharedPoints= () => {
   return (
@@ -45,7 +53,7 @@ const StarbucksSharedPoints= () => {
                 <li>Monday (Day 1): set a goal, map out the problem, and pick a target to focus on.</li>
                 <li>Tuesday (Day 2): research existing solutions and sketch own solutions on paper.</li>
                 <li>Wednesday (Day 3): turn ideas into testable storyboards.</li>
-                <li>Thursday (Day 4): build a high-fidelity prototype.</li>
+                <li>Thursday (Day 4): build a prototype.</li>
                 <li>Friday (Day 5): test prototype with people.</li>
               </ul>
             </div>
@@ -77,8 +85,16 @@ const StarbucksSharedPoints= () => {
             </div>
             <div>
               <h4>Map & Focus</h4>
-              <p>I created a map to visualize the flow of group sharing from a Starbucks customer and listed "How might we...." questions along each path to help me identify possible features, flows, as well as help me choose a target to focus on.</p>
-              <p>For this project, I decided to focus mainly on the functionality of point sharing. Creating value for point sharing is another important focus, however, I will leave that for another time after the flow of point sharing is in place. </p>
+              <p>I created a map to visualize the flow of group sharing from a Starbucks customer and listed "How might we...." questions along each path to help me identify possible features, flows, as well as help me choose a target to focus on. For this project, I decided to focus mainly on the functionality of point sharing from the point of view of a Starbucks member initiating the sharing.</p>
+              <p>I wanted to address these questions:</p>
+              <ul>
+                <li>How will a member create a group?</li>
+                <li>How will a member invite other members to a group?</li>
+                <li>How will a member redeem points?</li>
+                <li>How will a member separate their individual points from group points?</li>
+                <li>How will a member manage their group membership?</li>
+              </ul>
+              <p> Creating value for point sharing is another important focus, however, I will leave that for another time. </p>
               <div>
                 <img src={ SBMap }  alt="project map" className="picture-inner-width"/>
               </div>
@@ -93,15 +109,16 @@ const StarbucksSharedPoints= () => {
           <div className="section-header"><h2>Day 2</h2></div>
           <div className="section-content">
             <div>
-              <p>For Day 2 I did some research on existing point sharing programs.I made notes on how these programs work, their product flow, and what I thought were good ideas.</p>
+              <p>For Day 2 I did some research on existing point sharing programs. I made notes on how these programs work, their product flow, and what I thought were good ideas.</p>
               <ul>
                 <li>Airlines, hotels, and credit cards point sharing - Members can share points if they want. They can  purchase a service for another person or transfer points to another existing member.</li>
                 <li>Scandanavian Airlines - Members can pool their airline points to redeem for later group trips by inviting existing members by using a member number.</li>
                 <li>Stamp cards - A little different than the rest but a stamp card makes it possible for multiple people to collect stamps on one card. However, the reward is usually redeemed by one person.</li>
                 <li>Grocery store member discount programs - They require only a phone number to prove membership, making it possible for multiple people to take advantage of the program.</li>
               </ul>
-              <p>I sketched out my own solution and as I was working alone, this is the solution I went with.</p>
-              <div className="sb-sketch-container">
+              <p>I also went through the Starbucks Mobile App to familiarize myself with the app design system and flow patterns.</p>
+              <p>I sketched out a rough solution and as I was working alone, this is the solution I went with.</p>
+              <div className="sketch-container">
                 <div><img src={ SBSketch1 }  alt="day two sketch" /></div>
                 <div><img src={ SBSketch2 }  alt="day two sketch" /></div>
                 <div><img src={ SBSketch3 }  alt="day two sketch" /></div>
@@ -111,6 +128,67 @@ const StarbucksSharedPoints= () => {
         </div>
       </div>
 
+       {/* Fourth Section -- Day 3 */}
+      <div className="project-section-outer">
+        <div className="project-section-inner">
+          <div className="section-header"><h2>Day 3</h2></div>
+          <div className="section-content">
+            <div>
+              <p>Using my sketches from the previous day, I created a user flow detailing the following processes: creating a shared rewards group, redeeming points, collecting points, and managing the group. I then used the user flows and my Day 2 sketches to create storyboard detailing my solution. </p>
+            </div>
+            <div>
+              <img src={ SBFlow }  alt="user flow" className="picture-inner-width"/>
+            </div>
+            <div className="sketch-container">
+              <div><img src={ SBStoryboard1 }  alt="day two sketch" /></div>
+              <div><img src={ SBStoryboard2 }  alt="day two sketch" /></div>
+            </div>
+            <div className="sketch-container sketch-uneven">
+              <div className="sketch-uneven-left"><img src={ SBStoryboard3 }  alt="day two sketch"/></div>
+              <div className="sketch-uneven-right"><img src={ SBStoryboard4 }  alt="day two sketch"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Fifth Section -- Day 4 */}
+      <div className="project-section-outer">
+        <div className="project-section-inner">
+          <div className="section-header"><h2>Day 4</h2></div>
+          <div className="section-content">
+            <div>
+              <p>Day 4 was dedicated to creating a prototype for testing. I used Figma to create a Lo-Fi prototype of my solution. You can access the working prototype <a href="https://www.figma.com/proto/rFecwd0fdKmj3SFC0uR4OC/SB_Sharing?node-id=20-2609&scaling=scale-down&page-id=0%3A1&starting-point-node-id=20%3A2609" target="blank">here</a>.</p>
+            </div>
+            <div>
+              <img src={ SBLoFi }  alt="user flow" className="picture-inner-width"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Sixth Section -- Day 5 */}
+      <div className="project-section-outer">
+        <div className="project-section-inner">
+          <div className="section-header"><h2>Day 5</h2></div>
+          <div className="section-content">
+            <div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>      
+
+      {/* Fifth Section -- Conclusion */}
+      <div className="project-section-outer">
+        <div className="project-section-inner">
+          <div className="section-header"><h2>Conclusion & Final Thoughts</h2></div>
+          <div className="section-content">
+            <div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div> 
 
     </div>
   );

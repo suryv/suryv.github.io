@@ -335,19 +335,30 @@ a, a:visited {
   width:100%
 }
 
-.sb-sketch-container  {
+.starbucks-sp .sketch-container  {
   display:flex;
   flex-direction: row;
   margin: 0 -0.5em;
+  justify-content: center;
 }
 
-.sb-sketch-container div {
+.starbucks-sp .sketch-container div {
   flex: 1 1;
   margin: 0 0.5em;
 }
 
-.sb-sketch-container img {
+.starbucks-sp .sketch-container img {
   max-width: 100%
 }
 
+.starbucks-sp .sketch-container.sketch-uneven div {
+  flex: unset !important;
+}
 
+.starbucks-sp .sketch-uneven-left {
+  width: 56%;
+}
+
+.sketch-uneven-right {
+  width: 31%;
+}
