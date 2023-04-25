@@ -362,3 +362,12 @@ a, a:visited {
 .sketch-uneven-right {
   width: 31%;
 }
+
+.centered-txt {
+  text-align: center;
+}
+
+.section-link a {
+  font-weight: 500;
+  color: #2d2d2d
+}

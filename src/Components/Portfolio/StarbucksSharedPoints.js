@@ -11,6 +11,9 @@ import SBStoryboard3 from "../../Assets/sb_storyboard3.png"
 import SBStoryboard4 from "../../Assets/sb_storyboard4.png"
 import SBFlow from "../../Assets/sb_flows1.png"
 import SBLoFi from "../../Assets/sb_lofi.png"
+import SBMainStar from "../../Assets/sb_mainstar.png"
+import SBHiFi from "../../Assets/sb_hifi.png"
+
 
 
 
@@ -24,16 +27,16 @@ const StarbucksSharedPoints= () => {
           <div className="section-header"><h1>Starbucks Shared Rewards</h1></div>
           <div className="section-content sc-flex-horizontal">
             <div className="project-intro-img sc-flex-tiem">
-              <img src={ projectImageFiller }  alt="project main" />
+              <img src={ SBMainStar }  alt="project main" />
             </div>
-            <div className="sc-flex-item">
+            <div className="sc-flex-item section-link">
               <ul>
                 <li>Concept</li>
                 <li>Solo Project</li>
                 <li>Role: UX/UI Designer</li>
                 <li>Timeline: One Week</li>
                 <li>Platform: Mobile</li>
-                <li>Tools & Methods: Pencil/Paper, Figma, Starbucks Design System Guide, Design Sprint</li>
+                <li>Tools & Methods: Pencil/Paper, Figma, <a href="https://creative.starbucks.com/" target="blank">Starbucks Design System Guide</a>, Design Sprint</li>
               </ul>
             </div>
           </div>
@@ -152,15 +155,15 @@ const StarbucksSharedPoints= () => {
       </div>
 
       {/* Fifth Section -- Day 4 */}
-      <div className="project-section-outer">
+      <div className="project-section-outer ps-five">
         <div className="project-section-inner">
           <div className="section-header"><h2>Day 4</h2></div>
-          <div className="section-content">
+          <div className="section-content section-link">
             <div>
-              <p>Day 4 was dedicated to creating a prototype for testing. I used Figma to create a Lo-Fi prototype of my solution. You can access the working prototype <a href="https://www.figma.com/proto/rFecwd0fdKmj3SFC0uR4OC/SB_Sharing?node-id=20-2609&scaling=scale-down&page-id=0%3A1&starting-point-node-id=20%3A2609" target="blank">here</a>.</p>
+              <p>Day 4 was dedicated to creating a prototype for testing. I used Figma to create a mid-fidelity prototype of my solution. You can access the working prototype <a href="https://www.figma.com/proto/rFecwd0fdKmj3SFC0uR4OC/SB_Sharing?node-id=20-2609&scaling=scale-down&page-id=0%3A1&starting-point-node-id=20%3A2609" target="blank">here</a>.</p>
             </div>
             <div>
-              <img src={ SBLoFi }  alt="user flow" className="picture-inner-width"/>
+              <img src={ SBLoFi }  alt="prototype" className="picture-inner-width"/>
             </div>
           </div>
         </div>
@@ -172,7 +175,25 @@ const StarbucksSharedPoints= () => {
           <div className="section-header"><h2>Day 5</h2></div>
           <div className="section-content">
             <div>
-              <p></p>
+              <p>With a working prototype, I moved on to testing this prototype. It is recommended that a prototype is tested with five test users but at this time I was only able to find three test users. Tests were done over Zoom and one was done in person. The main goal for testing was to identify the aspects of the prototype that work, as well as the aspects that might need adjustment. After a quick intro to the point sharing feature, I asked the test user to go through three tasks:</p>
+              <div>
+                <ul>
+                  <li>Sign up for the rewards sharing program.</li>
+                  <li>From the Rewards Program Management screen, remove a rewards sharing group member.</li>
+                  <li>Redeem shared points.</li>
+                  <li>After an order, choose to apply the order points to your rewards group.</li>
+                </ul>
+              </div>
+              <p>Here are the findings:</p>
+              <div>
+                <ul>
+                  <li>Users need an indication that invites are pending.</li>
+                  <li>On the Home Page, if someone is part of a group, it is difficult to know what point count corresponds to the point meter.</li>
+                  <li>Users need to know the benefits of the rewards sharing program before seeing an intimidating "Terms of Use" screen.</li>
+                  <li>It makes more sense to apply order points to the group before user finalizes order.</li>
+                  <li>Users appreciate the freedom to choose if to share their points or keep under their individual count.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -182,9 +203,12 @@ const StarbucksSharedPoints= () => {
       <div className="project-section-outer">
         <div className="project-section-inner">
           <div className="section-header"><h2>Conclusion & Final Thoughts</h2></div>
-          <div className="section-content">
+          <div className="section-content section-link">
             <div>
-              <p></p>
+              <p>The feedback from the user tests was very helpful in moving forward with the shared rewards feature. The test users all expressed a desire to show more information on the value of the program. That was one think I knew I had to focus on but left out for the first prototype. Looking back, I should have included it as part of the initial solution. With that in mind, I reworked some of the flows and then moved on to a high fidelity prototype. You can access the updated prototype  <a href="https://www.figma.com/proto/rFecwd0fdKmj3SFC0uR4OC/SB_Sharing_Wireframes?node-id=31-325&scaling=scale-down&page-id=31%3A74&starting-point-node-id=31%3A325&show-proto-sidebar=1" target="blank">here</a>.</p>
+            </div>
+            <div>
+              <img src={ SBHiFi}  alt="final protype" className="picture-inner-width"/>
             </div>
           </div>
         </div>
