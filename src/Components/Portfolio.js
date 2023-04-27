@@ -42,21 +42,22 @@ const Portfolio = () => {
       <div className="sub-content portfolio">
       {/* Link Projects */}
         <div className="project-list">
+
+        <div className="project test">
+            <Link to="/Portfolio/StarbucksSharedPoints">
+              <img src={project_img2}  alt="project" className="project-image-filler" />
+              <div class="img-description-layer">
+                <div class="img-description">Starbucks Shared Rewards</div>
+              </div>
+            </Link>
+          </div>
+
           <div className="project">
             <Link to="/Portfolio/LangApp" >
               <img src={project_img1}  alt="project" className="project-image-filler" />
                 <div class="img-description-layer">
                   <div class="img-description">Reto</div>
                 </div>
-            </Link>
-          </div>
-
-          <div className="project test">
-            <Link to="/Portfolio/StarbucksSharedPoints">
-              <img src={project_img2}  alt="project" className="project-image-filler" />
-              <div class="img-description-layer">
-                <div class="img-description">Starbucks Shared Rewards</div>
-              </div>
             </Link>
           </div>
 

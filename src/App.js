@@ -25,8 +25,8 @@ function App() {
           <Header/>
           <Routes>
             <Route path="/Portfolio" element={<Portfolio/>} />
-              <Route path="/Portfolio/LangApp" element={<LangApp />} /> 
               <Route path="/Portfolio/StarbucksSharedPoints" element={<StarbucksSharedPoints />} /> 
+              <Route path="/Portfolio/LangApp" element={<LangApp />} /> 
             <Route path="/About" element={<About/>} />
             <Route from="/" element={<Portfolio/>}/>
             <Route exact path="/" element={<Navigate to="/Portfolio"/>} />
