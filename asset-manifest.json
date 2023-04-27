@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/suryv.github.io/static/css/main.e48a56e1.css",
+    "main.js": "/suryv.github.io/static/js/main.59381c8e.js",
+    "static/js/787.f6b97924.chunk.js": "/suryv.github.io/static/js/787.f6b97924.chunk.js",
+    "static/media/sb_map.png": "/suryv.github.io/static/media/sb_map.cc901a8bd12fd1cba348.png",
+    "static/media/sb_hifi.png": "/suryv.github.io/static/media/sb_hifi.fec2307f95bb6bad3d99.png",
+    "static/media/langapp_hifiwf.png": "/suryv.github.io/static/media/langapp_hifiwf.150850dd7989e3255a85.png",
+    "static/media/aboutmepic.jpg": "/suryv.github.io/static/media/aboutmepic.79cf31039bae146a545e.jpg",
+    "static/media/sb_lofi.png": "/suryv.github.io/static/media/sb_lofi.ad4495b300083527297a.png",
+    "static/media/langapp_persona.png": "/suryv.github.io/static/media/langapp_persona.ce471f7314e42cfcdcce.png",
+    "static/media/langapp_img1.png": "/suryv.github.io/static/media/langapp_img1.7dab85c00f4b1e4b3666.png",
+    "static/media/langapp_final.png": "/suryv.github.io/static/media/langapp_final.591ff22c0e3fe44a91b5.png",
+    "static/media/sb_mainstar.png": "/suryv.github.io/static/media/sb_mainstar.1f0009eef1bd3eb389ca.png",
+    "static/media/sb_storyboard1.png": "/suryv.github.io/static/media/sb_storyboard1.3ece570e89d547cc5ae0.png",
+    "static/media/sb_flows1.png": "/suryv.github.io/static/media/sb_flows1.96f347a27c8a8a92f519.png",
+    "static/media/sb_storyboard3.png": "/suryv.github.io/static/media/sb_storyboard3.c2fd08d2c926b4fc9fe6.png",
+    "static/media/sb_projectmain.png": "/suryv.github.io/static/media/sb_projectmain.25e6f4c0f12cf3cbc47c.png",
+    "static/media/sb_storyboard2.png": "/suryv.github.io/static/media/sb_storyboard2.a934caf5caaf3c2bc780.png",
+    "static/media/langapp_midfiwf.png": "/suryv.github.io/static/media/langapp_midfiwf.6bcc00fc3fe9502a580a.png",
+    "static/media/sb_sketch1.png": "/suryv.github.io/static/media/sb_sketch1.cc849a0158b6421fa987.png",
+    "static/media/sb_sketch2.png": "/suryv.github.io/static/media/sb_sketch2.2e5ac7153e6e051ce169.png",
+    "static/media/sb_sketch3.png": "/suryv.github.io/static/media/sb_sketch3.cda410f4e676e27b53fd.png",
+    "static/media/langapp_lofiwf.png": "/suryv.github.io/static/media/langapp_lofiwf.15adb116d2fbf113aa9b.png",
+    "static/media/sb_storyboard4.png": "/suryv.github.io/static/media/sb_storyboard4.2a390bb42a74eeff5e65.png",
+    "static/media/project_img_langapp.png": "/suryv.github.io/static/media/project_img_langapp.337501afb7bf24c5ad8a.png",
+    "static/media/langapp_am.png": "/suryv.github.io/static/media/langapp_am.8bc753439ffa26118a7d.png",
+    "static/media/langapp_matrix.png": "/suryv.github.io/static/media/langapp_matrix.b3daec2dc5f5378ed503.png",
+    "static/media/langapp_ca.png": "/suryv.github.io/static/media/langapp_ca.4df31f3b71a9a2089c26.png",
+    "static/media/projectimagefiller.jpg": "/suryv.github.io/static/media/projectimagefiller.82ac5bc5e3a33bc97ffe.jpg",
+    "static/media/project_img_dribble_logo.png": "/suryv.github.io/static/media/project_img_dribble_logo.cb5e745f1318aaae5634.png",
+    "static/media/favicon.ico": "/suryv.github.io/static/media/favicon.4fe75d5f9adb18067b85.ico",
+    "index.html": "/suryv.github.io/index.html",
+    "main.e48a56e1.css.map": "/suryv.github.io/static/css/main.e48a56e1.css.map",
+    "main.59381c8e.js.map": "/suryv.github.io/static/js/main.59381c8e.js.map",
+    "787.f6b97924.chunk.js.map": "/suryv.github.io/static/js/787.f6b97924.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e48a56e1.css",
+    "static/js/main.59381c8e.js"
+  ]
+}
