@@ -14,9 +14,8 @@ const Footer= () =>{
           </div>
           <div>
             <div>Designed and built by Sury Villalobos</div>
-            
           </div>
-          <div><img src={ReactLogo}  alt="reactlogo" className="react-logo" style={{height: '20px'}}/></div>
+          <div className="footer-react"><img src={ReactLogo}  alt="reactlogo" className="react-logo" style={{height: '20px'}}/></div>
     </div>
   );
 }
