@@ -3,8 +3,8 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 import project_img1 from "../Assets/project_img_langapp.png";
-import project_img2 from "../Assets/sb_projectmain.png";
-import project_img3 from "../Assets/project_img_dribble_logo.png";
+import project_img2 from "../Assets/project_img_sb.png";
+import project_img3 from "../Assets/project_img_dribbble_logo.png";
 
 
 // // Toggle Image on Hover

@@ -8,8 +8,8 @@ const About = () => {
       <div className="about-content about-bio">
         <h2>Hi, I'm Sury</h2>
         <p> I'm a UX/UI designer with a background in frontend development.</p>
-        <p>As a designer and developer, I'm interested in creating experiences that are intuitive, impactful, and hopefully aesthetically pleasing.</p>
-        <p>I am based in Los Angeles and outside of work I love painting, photography, and going on long solitary walks. I travel whenever I can and create posters of my favorite cities.</p>
+        <p>As a designer and developer, I'm interested in creating experiences that are intuitive, impactful, and aesthetically pleasing.</p>
+        <p>I am based in Los Angeles and outside of work I am often painting, spending time with my dog, or discussing movies with my friends. I travel whenever I can and am inspired by the different places I've visited.</p>
 
         <div className="contact">
           <div><a href="mailto:suryvlobos@gmail.com">suryvlobos@gmail.com</a></div>

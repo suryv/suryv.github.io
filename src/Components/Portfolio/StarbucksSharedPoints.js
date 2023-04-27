@@ -1,6 +1,5 @@
 import '../../App.css';
 
-import projectImageFiller from "../../Assets/projectimagefiller.jpg";
 import SBMap from "../../Assets/sb_map.png";
 import SBSketch1 from "../../Assets/sb_sketch1.png"
 import SBSketch2 from "../../Assets/sb_sketch2.png"
