@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.15e1eb21.css",
-    "main.js": "/static/js/main.fb1faa4f.js",
+    "main.css": "/static/css/main.185a337a.css",
+    "main.js": "/static/js/main.be656b82.js",
     "static/js/787.f6b97924.chunk.js": "/static/js/787.f6b97924.chunk.js",
+    "static/media/aboutmepic.jpg": "/static/media/aboutmepic.ecd7bcd489078fd14b49.jpg",
     "static/media/sb_map.png": "/static/media/sb_map.cc901a8bd12fd1cba348.png",
     "static/media/sb_hifi.png": "/static/media/sb_hifi.fec2307f95bb6bad3d99.png",
     "static/media/langapp_hifiwf.png": "/static/media/langapp_hifiwf.150850dd7989e3255a85.png",
-    "static/media/aboutmepic.jpg": "/static/media/aboutmepic.79cf31039bae146a545e.jpg",
     "static/media/sb_lofi.png": "/static/media/sb_lofi.ad4495b300083527297a.png",
     "static/media/langapp_persona.png": "/static/media/langapp_persona.ce471f7314e42cfcdcce.png",
     "static/media/langapp_img1.png": "/static/media/langapp_img1.7dab85c00f4b1e4b3666.png",
@@ -31,12 +31,12 @@
     "static/media/pnf_blinkanimation.gif": "/static/media/pnf_blinkanimation.8badfe0059615fb77784.gif",
     "static/media/favicon.ico": "/static/media/favicon.4fe75d5f9adb18067b85.ico",
     "index.html": "/index.html",
-    "main.15e1eb21.css.map": "/static/css/main.15e1eb21.css.map",
-    "main.fb1faa4f.js.map": "/static/js/main.fb1faa4f.js.map",
+    "main.185a337a.css.map": "/static/css/main.185a337a.css.map",
+    "main.be656b82.js.map": "/static/js/main.be656b82.js.map",
     "787.f6b97924.chunk.js.map": "/static/js/787.f6b97924.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15e1eb21.css",
-    "static/js/main.fb1faa4f.js"
+    "static/css/main.185a337a.css",
+    "static/js/main.be656b82.js"
   ]
 }
