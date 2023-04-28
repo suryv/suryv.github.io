@@ -23,7 +23,7 @@ const LangApp= () => {
                 <li>Concept</li>
                 <li>Solo Project</li>
                 <li>Role: UX/UI Designer, Researcher</li>
-                <li>Timeline: May - July 2022</li>
+                <li>Timeline: 10 weeks</li>
                 <li>Platform: Mobile</li>
                 <li>Tools: Figma, Maze Remote Testing</li>
               </ul>

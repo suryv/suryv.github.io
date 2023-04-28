@@ -35,7 +35,7 @@ const StarbucksSharedPoints= () => {
                 <li>Role: UX/UI Designer</li>
                 <li>Timeline: One Week</li>
                 <li>Platform: Mobile</li>
-                <li>Tools & Methods: Pencil/Paper, Figma, <a href="https://creative.starbucks.com/" target="blank">Starbucks Design System Guide</a>, Design Sprint</li>
+                <li>Tools & Methods: Pencil/Paper, Figma, <a href="https://creative.starbucks.com/" target="blank">Starbucks Design System Guide</a>, <a href="http://www.gv.com/sprint/" target="blank">Design Sprint</a></li>
               </ul>
             </div>
           </div>
