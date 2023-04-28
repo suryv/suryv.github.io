@@ -193,7 +193,9 @@ a, a:visited {
 }
 
 .about img {
-  max-width:100%;
+  max-width: 75%;
+  display: block;
+  margin-left: auto;
 }
 
 .about-content.about-img div {
