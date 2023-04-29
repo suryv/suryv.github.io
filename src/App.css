@@ -231,6 +231,20 @@ a, a:visited {
 
 /* ///////////////////////////////////Individual Projects/////////////////////////////// */
 
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
 .project-content-outer {
   display: grid;
   grid-column: 1/span 12;
@@ -526,7 +540,13 @@ h1, h2 {
 .sc-flex-horizontal {
   flex-direction: column;
 }
+
+.project-intro .sc-flex-item {
+  margin: 0 auto;
 }
+}
+
+
 
 
 
@@ -617,5 +637,9 @@ h1, h2 {
 
 .sc-flex-horizontal {
   flex-direction: column;
+}
+
+.project-intro .sc-flex-item {
+  margin: 0 auto;
 }
 }

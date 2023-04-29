@@ -13,7 +13,26 @@ import SBLoFi from "../../Assets/sb_lofi.png"
 import SBMainStar from "../../Assets/sb_mainstar.png"
 import SBHiFi from "../../Assets/sb_hifi.png"
 
+import React from 'react';
 
+function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`project-content-inner fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
 
 
 const StarbucksSharedPoints= () => {
@@ -43,6 +62,7 @@ const StarbucksSharedPoints= () => {
       </div>
 
       {/* Second Section -- Project Overview */}
+      <FadeInSection>
       <div className="project-section-outer">
         <div className="project-section-inner">
           <div className="section-header"><h2>Project Overview</h2></div>
@@ -62,8 +82,10 @@ const StarbucksSharedPoints= () => {
           </div>
         </div>
       </div>
+      </FadeInSection>
 
       {/* Third Section -- Day 1 */}
+      <FadeInSection>
       <div className="project-section-outer">
         <div className="project-section-inner">
           <div className="section-header"><h2>Day 1</h2></div>
@@ -104,8 +126,10 @@ const StarbucksSharedPoints= () => {
           </div>
         </div>
       </div>
+      </FadeInSection>
 
       {/* Third Section -- Day 2 */}
+      <FadeInSection>
       <div className="project-section-outer">
         <div className="project-section-inner">
           <div className="section-header"><h2>Day 2</h2></div>
@@ -129,8 +153,10 @@ const StarbucksSharedPoints= () => {
           </div>
         </div>
       </div>
+      </FadeInSection>
 
        {/* Fourth Section -- Day 3 */}
+      <FadeInSection>
       <div className="project-section-outer">
         <div className="project-section-inner">
           <div className="section-header"><h2>Day 3</h2></div>
@@ -152,8 +178,10 @@ const StarbucksSharedPoints= () => {
           </div>
         </div>
       </div>
+      </FadeInSection>
 
       {/* Fifth Section -- Day 4 */}
+      <FadeInSection>
       <div className="project-section-outer ps-five">
         <div className="project-section-inner">
           <div className="section-header"><h2>Day 4</h2></div>
@@ -167,8 +195,10 @@ const StarbucksSharedPoints= () => {
           </div>
         </div>
       </div>
+      </FadeInSection>
 
       {/* Sixth Section -- Day 5 */}
+      <FadeInSection>
       <div className="project-section-outer">
         <div className="project-section-inner">
           <div className="section-header"><h2>Day 5</h2></div>
@@ -196,9 +226,11 @@ const StarbucksSharedPoints= () => {
             </div>
           </div>
         </div>
-      </div>      
+      </div> 
+      </FadeInSection>     
 
       {/* Fifth Section -- Conclusion */}
+      <FadeInSection>
       <div className="project-section-outer">
         <div className="project-section-inner">
           <div className="section-header"><h2>Conclusion & Final Thoughts</h2></div>
@@ -212,6 +244,7 @@ const StarbucksSharedPoints= () => {
           </div>
         </div>
       </div> 
+      </FadeInSection>
 
     </div>
   );

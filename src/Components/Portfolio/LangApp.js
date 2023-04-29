@@ -10,6 +10,27 @@ import LangAppMidFiWF from "../../Assets/langapp_midfiwf.png";
 import LangAppHiFiWF from "../../Assets/langapp_hifiwf.png";
 import LangAppFinal from "../../Assets/langapp_final.png";
 
+import React from 'react';
+
+function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`project-content-inner fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
+
 const LangApp= () => {
   return (
     <div className="project-content-outer lang-app">
@@ -33,16 +54,21 @@ const LangApp= () => {
           </div>
         </div>
       </div>
+
       {/* Second section Background */}
+      <FadeInSection>
       <div className="project-content-inner">
         <div className="project-section">
           <div className="flex-item"><h2>Background</h2>
             <p>I developed Reto as my final project for General Assembly's UX Design course. We were asked to design an app to solve a problem of our liking. I like learning languages but find it difficult to practice what I know. For me, language apps are not very helpful and I struggle with motivation to practice. I knew I was not the only one that felt this way so I chose to design an app that helps people practice the language they are learning. My goal for this project was to find the gaps in current language apps and combine those findings with what language learners need to keep them motivated in their learning journey.
             </p>
             </div>
-          </div>
+          </div> 
       </div>
+      </FadeInSection>
+
       {/* Third section: Research Analysis */}
+      <FadeInSection>
       <div className="project-content-inner">
         <div className="project-section">
           <div className="flex-item"><h2>Research and Insights</h2></div>
@@ -77,7 +103,10 @@ const LangApp= () => {
           </div>
         </div>
       </div>
-    {/* Fourth section: Persona */}
+      </FadeInSection>
+
+      {/* Fourth section: Persona */}
+      <FadeInSection>
       <div className="project-content-inner">
         <div className="project-section">
           <div className="flex-item"><h2>Persona</h2></div>
@@ -88,7 +117,10 @@ const LangApp= () => {
           </div>
         </div>
       </div>
-    {/* Fifth section: Problem */}
+      </FadeInSection>
+
+      {/* Fifth section: Problem */}
+      <FadeInSection>
       <div className="project-content-inner">
         <div className="project-section">
           <div className="flex-item"><h2>Problem</h2></div>
@@ -104,7 +136,10 @@ const LangApp= () => {
           </div>
         </div>
       </div>
-    {/* Fifth section: HMW and Features */}
+      </FadeInSection>
+
+      {/* Fifth section: HMW and Features */}
+      <FadeInSection>
       <div className="project-content-inner">
         <div className="project-section-header"><h2>Features</h2></div>
         <div className="project-section ps-flex lang-app-fifth">
@@ -125,9 +160,11 @@ const LangApp= () => {
             <img src={LangAppMatrix}  alt="feature matrix" />
           </div>
         </div>
-          
       </div>
+      </FadeInSection>
+
        {/* Sixth section: Wireframes */}
+      <FadeInSection>
       <div className="project-content-inner">
         <div className="project-section">
           <div>
@@ -172,7 +209,10 @@ const LangApp= () => {
           </div>
         </div>
       </div>
+      </FadeInSection>
+
       {/* Seventh section: Hi Def and Unmoderated Testing */}
+      <FadeInSection>
       <div className="project-content-inner">
         <div className="project-section">
           <div>
@@ -194,7 +234,10 @@ const LangApp= () => {
           </div>
         </div>
       </div>
+      </FadeInSection>
+
       {/* Eight section: Final */}
+      <FadeInSection>
       <div className="project-content-inner">
         <div className="project-section">
           <div>
@@ -214,7 +257,10 @@ const LangApp= () => {
           </div>
         </div>
       </div>
+      </FadeInSection>
+
       {/* Ninth section: Conclusion */}
+      <FadeInSection>
       <div className="project-content-inner">
         <div className="project-section">
           <div>
@@ -233,6 +279,8 @@ const LangApp= () => {
           </div>
         </div>
       </div>
+      </FadeInSection>
+
     </div>
   ); 
 }
