@@ -480,8 +480,7 @@ a, a:visited {
 }
 
 .about-content.about-img {
-  margin-left: 0px;
-  margin-bottom: 2.5em;
+  margin: 0 auto 2.5em auto;
 }
 
 .sub-content {
@@ -571,8 +570,7 @@ h1, h2 {
 }
 
 .about-content.about-img {
-  margin-left: 0px;
-  margin-bottom: 2.5em;
+  margin: 0 auto 2.5em auto;
 }
 
 .sub-content {
