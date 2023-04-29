@@ -25,7 +25,7 @@ const StarbucksSharedPoints= () => {
         <div className="project-section-inner">
           <div className="section-header"><h1>Starbucks Shared Rewards</h1></div>
           <div className="section-content sc-flex-horizontal">
-            <div className="project-intro-img sc-flex-tiem">
+            <div className="project-intro-img sc-flex-item">
               <img src={ SBMainStar }  alt="project main" />
             </div>
             <div className="sc-flex-item section-link">

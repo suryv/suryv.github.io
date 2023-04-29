@@ -113,7 +113,7 @@ a, a:visited {
 }
 
 .sub-content {
-  grid-column: 3/span 8;
+  grid-column: 2/span 10;
   grid-row:2;
   margin-top:40px
 }
@@ -127,7 +127,6 @@ a, a:visited {
 
 .project-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 -0.5em;
 }
@@ -186,6 +185,7 @@ a, a:visited {
 /* ////////////////////////////////////////About////////////////////////////////////////// */
 
 .about {
+  grid-column: 3/span 8;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -438,7 +438,9 @@ a, a:visited {
   }
 
   .header {
-    display:block
+    display:block;
+    grid-column:1/span 12;
+    margin: 0 1em
   }
 
   .nav-bar {
@@ -452,14 +454,22 @@ a, a:visited {
 }
 
 .footer {
-  font: size 0.7rem;
+  font-size: 0.7rem;
   justify-content: center;
+  grid-column: 1/span 12;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-contact {
   justify-content: center;
-  margin: 1em;
 }
+
+.footer-contact, .footer-credit {
+  margin: 1em;
+  text-align: center;
+}
+
 
 .footer-dot {
   line-height: .6rem;
@@ -481,6 +491,103 @@ a, a:visited {
 
 .project-list{
   flex-direction:column
+}
+
+.img-description {
+  font-size: 1.4em
+}
+
+.project-section {
+  grid-column: 1/span 12;
+  margin: 1.25em 1em 2.5em 1em;
+}
+
+.project-section-header {
+  grid-column: 1/span 12;
+  margin: 0 1em 0 1em;
+}
+
+.ps-flex {
+  flex-direction: column-reverse;
+}
+
+.flex-item.project-intro{
+  margin-right: 0px;
+}
+
+h1, h2 {
+  font-size:1.6em
+}
+
+.project-section-inner {
+  grid-column: 1/span 12;
+  margin: 0 1em;
+}
+
+.sc-flex-horizontal {
+  flex-direction: column;
+}
+}
+
+
+
+/* /////////////////////RESPONSIVE//////////TABLET/////////////////////////////// */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .main-content{
+    grid-template-rows: 11.5em 1fr 5em;
+  }
+
+  .header {
+    grid-column: 1/span 12;
+    margin: 0 1rem;
+}
+
+  .nav-bar {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.nav-bar a.active:hover {
+  border-bottom: 2px solid #b38f2d;
+}
+
+.footer {
+  font-size: 0.7em
+}
+
+.footer-contact, .footer-credit {
+    justify-content: center;
+    margin: 1em;
+}
+
+.footer-dot {
+  line-height: .6rem;
+}
+
+.about {
+  flex-direction: column-reverse;
+}
+
+.about-content.about-img {
+  margin-left: 0px;
+  margin-bottom: 2.5em;
+}
+
+.sub-content {
+  margin: 5em 1em !important;
+  grid-column: 1/span 12;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+
+.img-description {
+  font-size: 1.4em
 }
 
 .project-section {

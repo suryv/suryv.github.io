@@ -12,7 +12,7 @@ const Footer= () =>{
             <div className="footer-dot">.</div>
             <div><a href="https://github.com/vlobos" target="_blank" rel="noreferrer">GitHub</a></div>
           </div>
-          <div>
+          <div className="footer-credit">
             <div>Designed and built by Sury Villalobos</div>
           </div>
     </div>
