@@ -1,25 +1,68 @@
+:root {
+  --background-main: #ffffff;
+  --text-color-main: #4e4d4d;
+  --header-color-main: #4a4846;
+  --logo-color: #b38f2d;
+  --light: #daddc4;
+  --dark: #678a50 ;
+  --lightest: #f8ffcd ;
+  --darkest: #4a4846 ;
+  --accent: #dba43b;
+  --text-large: 1.2em;
+  --text-small: 0.9em;
+  --body-font: "Poppins";
+  --header-font: "Bebas Neue";
+  --logo-font: "Bebas Neue";
+  --pnf-font: "Bebas Neue";
+  --logo-size: 3.8em;
+  --header-letter-spacing: 0.05em
+}
+
+
 body {
-  background-color: #fffff8;
-  color:#5d5d5d;
-  font-family: "Poppins";
+  background-color: var(--background-main);
+  color:var(--text-color-main);
+  font-family: var(--body-font);
   font-size: 16px;
   cursor: default;
-  text-align: justify;
+}
+
+h1 {
+  font-family: var(--header-font);
+  font-size: 4.1em;
+  font-weight: 500;
+  letter-spacing: var(--header-letter-spacing);
 }
 
 h2 {
-  font-size: 2em;
+  font-family: var(--header-font);
+  font-size: 2.5em;
   font-weight: 500;
+  letter-spacing: var(--header-letter-spacing);
+}
+
+h3 {
+  font-family: var(--header-font);
+  font-size: 1.9em;
+  font-weight: 500;
+  letter-spacing: var(--header-letter-spacing);
 }
 
 h4 {
-  font-size: 1.15em;
+  font-family: var(--header-font);
+  font-size: 1.4em;
   font-weight: 500;
+  letter-spacing: var(--header-letter-spacing);
 }
 
 a, a:visited { 
   text-decoration: none; 
-  color:#515151
+  color:var(--darkest);
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--accent);
 }
 
 .main-content {
@@ -43,6 +86,7 @@ a, a:visited {
   display: flex;
   flex-wrap:wrap;
   grid-row: 3;
+  height: 100px;
 
 }
 
@@ -50,6 +94,10 @@ a, a:visited {
   flex: 1 1;
   display: flex;
   flex-wrap:wrap;
+}
+
+.footer-credit{
+  display: flex
 }
 
 .footer-dot {
@@ -63,22 +111,27 @@ a, a:visited {
   margin-left:16px
 }
 
+.footer a {
+  font-weight: 500;
+}
+
 /* ////////////////////////////////////////Header & Nav////////////////////////////////////////// */
 
 .header {
-  grid-column: 2 / span 10;
+  grid-column: 1 / span 12;
   grid-row: 1;
   display: flex;
   justify-content: space-between;
-  padding-top: 32px
+  padding: 32px 60px 22px 60px;
+  align-items: center;
   /* position: sticky;
   top:35px; */
 }
 
 .header-name a, .header-name a:visited {
-  color: #b38f2d !important;
-  font-size: 2.5em;
-  font-family: "Mulish";
+  color: var(--logo-color) !important;
+  font-size: var(--logo-size);
+  font-family: "Bebas Neue";
   font-weight: 1000;
   letter-spacing: .1rem
 }
@@ -100,16 +153,21 @@ a, a:visited {
 }
 
 
-.nav-bar a:hover, .footer a:hover, .contact a:hover, .about a:hover {
-  color: #b38f2d;
-}
+/* .nav-bar a:hover, .footer a:hover, .contact a:hover, .about a:hover {
+  color: var(--accent);
+} */
 
 .nav-bar a.active {
-  border-bottom: 2px solid #515151;
+  border-bottom: 2px solid var(--darkest);
+  font-weight: 500;
+}
+
+.nav-bar a{
+  font-weight: 500;
 }
 
 .nav-bar a.active:hover {
-  border-bottom: 2px solid #b38f2d;
+  border-bottom: 2px solid var(--accent);
 }
 
 .sub-content {
@@ -118,11 +176,15 @@ a, a:visited {
   margin-top:40px
 }
 
+
+/* ///////////////////////////  MAIN PAGE /////////////////////////////////// */
+
 .sub-content.portfolio {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0px
+  margin-top: 0px;
+  margin-bottom: 40px
 }
 
 .project-list {
@@ -135,8 +197,12 @@ a, a:visited {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 0 0.5em;
+  margin: 0 1em;
   position: relative;
+}
+
+/* .project-image {
+  position: relative
 }
 
 .img-description-layer {
@@ -145,18 +211,17 @@ a, a:visited {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgb(255 255 249 / 75%);
-  color: #5d5d5d;
+  background: #f9faf3e8;
+  color: var(--text-color-main);
   visibility: hidden;
   opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
 }
 
-.project:hover .img-description-layer {
+.project-image:hover .img-description-layer {
   visibility: visible;
   opacity: 1;
 }
@@ -164,23 +229,30 @@ a, a:visited {
 .img-description {
   transition: .2s;
   transform: translateY(1em);
-  font-size: 1.4vw;
+  font-size: 1.9vw;
   font-weight: 500;
+  letter-spacing: var(--header-letter-spacing);
 }
 
-.project:hover .img-description {
+.project-image:hover .img-description {
   transform: translateY(0);
+} */
+
+.project .button.read-more h4 {
+  color: var(--accent);
+  font-weight: 600;
+  font-family: var(--body-font);
+  font-size: var(--text-large);
+}
+
+.project h3 {
+  margin: .5em 0px
 }
 
 .project-list img {
   max-width:100%;
 }
 
-.project-list p {
-  font-weight: 500;
-  margin-top: 0px;
-  font-size: 16px;
-}
 
 /* ////////////////////////////////////////About////////////////////////////////////////// */
 
@@ -229,7 +301,7 @@ a, a:visited {
   margin: 0px
 }
 
-/* ///////////////////////////////////Individual Projects/////////////////////////////// */
+/* ///////////////////////////////////    Projects    /////////////////////////////// */
 
 .fade-in-section {
   opacity: 0;
@@ -245,39 +317,15 @@ a, a:visited {
   visibility: visible;
 }
 
-.project-content-outer {
-  display: grid;
-  grid-column: 1/span 12;
-  grid-template-columns: repeat(12,1fr);
-  grid-column-gap: 16px;
-  /* max-width: 1680px; */
-  margin-top:40px
+.pco-accent-style{
+  background-color: var(--darkest);
+  color:var(--lightest)
 }
 
-.project-content-inner {
-  display: grid;
-  grid-column: 1/span 12;
-  grid-template-columns: repeat(12,1fr);
-  grid-column-gap: 16px;
+.pco-accent-style h4{
+  color: var(--accent)
 }
 
-.project-section-header{
-  grid-column: 3/span 8
-}
-
-.project-header {
-  grid-column: 3/span 8
-}
-
-.project-section {
-  grid-column: 3/span 8;
-  margin:20px 0 40px 0
-}
-
-.project-content-inner:nth-child(even){
-  background-color: #697f41;
-  color:#fffaea
-}
 
 .ps-flex {
   display: flex;
@@ -294,16 +342,103 @@ a, a:visited {
   margin-top: 0px
 }
 
-.project-section.ps-flex.lang-app-fifth{
-  margin-top:0px
-}
 
 .flex-item.lang-app-feature {
   flex: 1 1 54%;
   margin-right: 28px;
 }
 
-/* Images */
+.project-container {
+  display: grid;
+  grid-column: 1/span 12;
+  grid-template-columns: repeat(12,1fr);
+  grid-column-gap: 16px;
+  margin-bottom: 40px
+}
+
+
+.project-section-outer {
+  display: grid;
+  grid-column: 1/span 12;
+  grid-template-columns: repeat(12,1fr);
+  grid-column-gap: 16px;
+} 
+
+.project-section-inner {
+grid-column: 3/span 8;
+}
+
+.project-intro .section-header {
+margin-bottom: 40px;
+text-align: center;
+}
+
+.sc-flex-horizontal {
+display: flex
+}
+
+.sc-flex-item.sc-flex-item-half {
+flex: 0 1 50%
+}
+
+.sc-flex-item.sc-flex-item-sixty {
+flex: 0 1 60%
+}
+
+.sc-flex-item.sc-flex-item-forty {
+flex: 0 1 40%
+}
+
+.sc-flex-three {
+flex: 1
+}
+
+.sc-flex-margin-right {
+margin-right: 24px
+}
+
+.project-intro p {
+margin-top:0px;
+text-align: justify
+}
+
+.large-txt {
+font-size:var(--text-large)
+}
+
+.section-content{
+margin: 20px 0 40px 0
+}
+
+.no-margin {
+margin:0px
+}
+
+.sketch-uneven-right {
+  width: 31%;
+}
+
+.centered-txt {
+  text-align: center;
+}
+
+.flex-center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-link a {
+  font-weight: 500;
+  color: var(--darkest)
+}
+
+.accent-link a {
+  font-weight: 600;
+  color: var(--accent)
+}
+
+/* ///////////////////////////////////  IMAGES  /////////////////////////////// */
 .project-main-pic img {
   border-radius: 20px;
   width: 100%;
@@ -321,67 +456,29 @@ a, a:visited {
   height: auto;
 }
 
-
-
-/* ///////////////////////////////////Starbucks Projects/////////////////////////////// */
-
-
-.project-container {
-    display: grid;
-    grid-column: 1/span 12;
-    grid-template-columns: repeat(12,1fr);
-    grid-column-gap: 16px;
-    margin-top: 40px;
-}
-
-
-.project-section-outer {
-    display: grid;
-    grid-column: 1/span 12;
-    grid-template-columns: repeat(12,1fr);
-    grid-column-gap: 16px;
-} 
-
-.project-section-outer:nth-child(even) {
-  background-color: #697f41;
-  color: #fffaea;
-}
-
-.project-section-inner {
-  grid-column: 3/span 8;
-}
-
-.project-intro .section-header {
-  margin-bottom: 40px;
-}
-
-.sc-flex-horizontal {
-  display: flex
-}
-
-.project-intro .sc-flex-item {
-  flex: 1 1 50%;
-  margin-right: 28px;
-} 
-
-.project-intro p {
-  margin-top:0px;
-  text-align: justify
-}
-
 .project-intro-img img {
-  border-radius: 20px;
   width: 100%;
 }
 
-.section-content{
-  margin: 20px 0 40px 0
+.react_lightgallery_item img {
+  max-width: 100%;
+  min-width: 100%;
 }
-
 
 .picture-inner-width {
   width:100%
 }
+
+.starbucks-sp .ps-seven .banner .react_lightgallery_item {
+  max-width: 310px;
+  margin: 40px 0px;
+}
+
+
+
+
+/* ///////////////////////////////////Starbucks Projects/////////////////////////////// */
+
 
 .starbucks-sp .sketch-container  {
   display:flex;
@@ -407,44 +504,113 @@ a, a:visited {
   width: 56%;
 }
 
-.sketch-uneven-right {
-  width: 31%;
+.starbucks-sp .banner {
+  grid-column: 1/span 12;
+  background-color: #006241;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-column-gap: 16px;
 }
 
-.centered-txt {
-  text-align: center;
+.starbucks-sp .ps-seven .banner-header{
+  font-size: 50px;
+  color: #FFFFFF;
 }
 
-.section-link a {
+.starbucks-sp .banner-text{
+  color: #ffffff;
+  
+}
+
+.starbucks-sp .banner .section-content.sc-flex-horizontal{
+  grid-column: 1/span 12
+}
+
+.starbucks-sp .ps-seven .content-background {
+  background-color: #cbe2db;
+  background-image: url("./Assets/sb_bg_stars.png");
+}
+
+.starbucks-sp .project-intro .banner-text{
+  padding: 0px 20px 40px 60px
+}
+
+.starbucks-sp .button-one a, .starbucks-sp .button-one a, .starbucks-sp .button-one a:visited {
+  background-color:transparent;
+	border-radius:32px;
+	border:1px solid #fff;
+  color:#fff;
+	display:inline-block;
+	cursor:pointer;
+	padding:8px 16px;
   font-weight: 500;
-  color: #2d2d2d
+  margin:32px 12px;
+	text-decoration:none;
 }
+
+.starbucks-sp .button-one a:active {
+  background-color:#fff;
+	border-radius:32px;
+	border:1px solid #fff;
+  color:#296242;
+	display:inline-block;
+	cursor:pointer;
+	padding:8px 16px;
+  font-weight: 500;
+  margin:32px 12px;
+	text-decoration:none;
+}
+
+.starbucks-sp .details{
+  margin-top: 80px;
+}
+
+.starbucks-sp .card-content {
+  background: var(--light);
+  padding: 24px;
+  }
+  
+  .starbucks-sp .ps-four .card-content {
+  height:90%;
+/* .starbucks-sp .ps-four .card-content */
+  max-width: 302px;
+  }
+
+  .starbucks-sp .ps-two .card-content {
+    height: 254px;
+    max-width: 302px;
+    }
+
+
 
 /* ///////////////////////////////////404/////////////////////////////// */
 
 .page-not-found {
-  font-family: 'Mulish';
+  font-family: var(--pnf-font);
+  letter-spacing: .02em;
   font-size: 28px
 }
 
 .page-not-found .lg-text-container {
-  font-family: 'Mulish';
+  font-family: var(--pnf-font);
+  letter-spacing: .02em;
   font-size: 160px;
   font-weight: 1000;
 }
 
 .page-not-found .m-text-container {
   max-width: 600px;
+  letter-spacing: .02em;
   margin: 0 auto;
 }
 
 .page-not-found .m-text-container a, .page-not-found .m-text-container a:visited {
-  color: #b38f2d;
+  color: var(--accent);
   font-weight: 600;
 }
 
 
-/* /////////////////////RESPONSIVE//////////PHONE/////////////////////////////// */
+/* /////////////////////RESPONSIVE//////////    PHONE      /////////////////////////////// */
 
 @media screen and (max-width:767px) {
   .main-content{
@@ -454,7 +620,7 @@ a, a:visited {
   .header {
     display:block;
     grid-column:1/span 12;
-    margin: 0 1em
+    padding: 20px;
   }
 
   .nav-bar {
@@ -464,7 +630,7 @@ a, a:visited {
 }
 
 .nav-bar a.active:hover {
-  border-bottom: 2px solid #b38f2d;
+  border-bottom: 2px solid var(--accent);
 }
 
 .footer {
@@ -482,8 +648,8 @@ a, a:visited {
 .footer-contact, .footer-credit {
   margin: 1em;
   text-align: center;
+  justify-content: center;
 }
-
 
 .footer-dot {
   line-height: .6rem;
@@ -498,7 +664,7 @@ a, a:visited {
 }
 
 .sub-content {
-  margin: 5em 1em !important;
+  margin: 1em 1em !important;
   grid-column: 1/span 12;
 }
 
@@ -506,18 +672,12 @@ a, a:visited {
   flex-direction:column
 }
 
+.project-list .project {
+  margin-bottom: 1em
+}
+
 .img-description {
   font-size: 1.4em
-}
-
-.project-section {
-  grid-column: 1/span 12;
-  margin: 1.25em 1em 2.5em 1em;
-}
-
-.project-section-header {
-  grid-column: 1/span 12;
-  margin: 0 1em 0 1em;
 }
 
 .ps-flex {
@@ -528,29 +688,87 @@ a, a:visited {
   margin-right: 0px;
 }
 
-h1, h2 {
-  font-size:1.6em
+h1 {
+  letter-spacing:var(--header-letter-spacing);
+  font-size: 2.3em;
+}
+
+h2 {
+  letter-spacing:var(--header-letter-spacing);
+  font-size: 2em;
+}
+
+h3 {
+  letter-spacing:var(--header-letter-spacing);
+  font-size: 1.8em;
+}
+
+h4 {
+  letter-spacing:var(--header-letter-spacing);
+  font-size: 1.4em;
 }
 
 .project-section-inner {
   grid-column: 1/span 12;
-  margin: 0 1em;
+  padding: 0 1.5em;
 }
 
 .sc-flex-horizontal {
   flex-direction: column;
 }
 
+.sc-flex-margin-right {
+  margin-right: 0px;
+}
+
+.card-content {
+  margin-bottom: 1em;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
 .project-intro .sc-flex-item {
   margin: 0 auto;
 }
+
+
+.starbucks-sp .project-intro .banner-text {
+  padding:0px 1.5em
+}
+
+.starbucks-sp .ps-seven .banner-text.centered-txt {
+  margin: 2em 1em;
+}
+
+.starbucks-sp .details {
+  margin-top:40px
+}
+
+.starbucks-sp .sketch-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.starbucks-sp .sketch-container.sketch-uneven {
+  display: flex;
+  flex-direction: row;
+}
+
+.starbucks-sp .ps-four .card-content {
+  height: 340px
+}
+
+
 }
 
 
 
 
 
-/* /////////////////////RESPONSIVE//////////TABLET/////////////////////////////// */
+/* /////////////////////RESPONSIVE//////////    TABLET    /////////////////////////////// */
 
 @media screen and (min-width:768px) and (max-width:1023px) {
   .main-content{
@@ -559,13 +777,13 @@ h1, h2 {
 
   .header {
     grid-column: 1/span 12;
-    margin: 0 1rem;
+    padding: 32px 1.5em 22px 1em;
 }
 
   .nav-bar {
     font-size: 1.5rem;
     text-align: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .nav-bar a.active:hover {
@@ -573,7 +791,8 @@ h1, h2 {
 }
 
 .footer {
-  font-size: 0.7em
+  font-size: 0.7em;
+  flex-direction: column
 }
 
 .footer-contact, .footer-credit {
@@ -594,7 +813,7 @@ h1, h2 {
 }
 
 .sub-content {
-  margin: 5em 1em !important;
+  margin: 5em 1.5em !important;
   grid-column: 1/span 12;
 }
 
@@ -603,14 +822,12 @@ h1, h2 {
   grid-template-columns: repeat(2,1fr);
 }
 
+.project-list .project {
+  margin-bottom: 1em
+}
 
 .img-description {
   font-size: 1.4em
-}
-
-.project-section {
-  grid-column: 1/span 12;
-  margin: 1.25em 1em 2.5em 1em;
 }
 
 .project-section-header {
@@ -626,13 +843,29 @@ h1, h2 {
   margin-right: 0px;
 }
 
-h1, h2 {
-  font-size:1.6em
+h1 {
+  letter-spacing:var(--header-letter-spacing);
+  font-size: 2.3em;
+}
+
+h2 {
+  letter-spacing:var(--header-letter-spacing);
+  font-size: 2em;
+}
+
+h3 {
+  letter-spacing:var(--header-letter-spacing);
+  font-size: 1.8em;
+}
+
+h4 {
+  letter-spacing:var(--header-letter-spacing);
+  font-size: 1.4em;
 }
 
 .project-section-inner {
   grid-column: 1/span 12;
-  margin: 0 1em;
+  margin: 0 1.5em;
 }
 
 .sc-flex-horizontal {
@@ -642,4 +875,29 @@ h1, h2 {
 .project-intro .sc-flex-item {
   margin: 0 auto;
 }
+
+.starbucks-sp .project-intro .banner-text {
+  padding:0px 1.5em
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.starbucks-sp .ps-two .sc-flex-horizontal, .starbucks-sp .ps-four .sc-flex-horizontal {
+  flex-direction: row;
+}
+
+.starbucks-sp .ps-two .card-content {
+  height: 254px;
+  max-width: 302px;
+}
+
+.starbucks-sp .ps-seven .section-content.sc-flex-horizontal {
+  flex-direction: row
+}
+
+
+
 }
