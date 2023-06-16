@@ -95,11 +95,11 @@ const Portfolio = () => {
             <div className="project-desc">
               <h3>Dribbble</h3>
               <p>Click the link to see my collection of UI work.</p>
-              <Link to="/Portfolio/LangApp" >
                 <div class="button read-more">
-                 <h4>Dribbble Profile</h4>
+                  <a href="https://dribbble.com/sury_villalobos" target="_blank" rel="noreferrer">
+                    <h4>Dribbble Profile</h4>
+                  </a>
                 </div>
-              </Link>
             </div>
           </div>
 

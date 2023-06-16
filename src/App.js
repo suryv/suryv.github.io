@@ -19,21 +19,38 @@ import PageNotFound from "./Components/PageNotFound"
 import LangApp from "./Components/Portfolio/LangApp"
 import StarbucksSharedPoints from "./Components/Portfolio/StarbucksSharedPoints"
 
+// import to ScrollToTop. Important for React Router bc it opens to place in instance of component
+import { useEffect } from "react";
+import { useLocation } from "react-router";
+
+const ScrollToTop = (props) => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return <>{props.children}</>
+};
+
+
+
 function App() {
   return (
     <div className="main-content">
         <Router> 
-          <Header/>
-          <Routes>
-            <Route path="/Portfolio" element={<Portfolio/>} />
-              <Route path="/Portfolio/StarbucksSharedPoints" element={<StarbucksSharedPoints />} /> 
-              <Route path="/Portfolio/LangApp" element={<LangApp />} /> 
-            <Route path="/About" element={<About/>} />
-            <Route from="/" element={<Portfolio/>}/>
-            <Route exact path="/" element={<Navigate to="/Portfolio"/>} />
-            <Route path='/404' element={<PageNotFound/>} />
-            <Route path='*' element={<Navigate replace to='/404'/>} />
-          </Routes>
+          <ScrollToTop>
+            <Header/>
+            <Routes>
+              <Route path="/Portfolio" element={<Portfolio/>} />
+                <Route path="/Portfolio/StarbucksSharedPoints" element={<StarbucksSharedPoints />} /> 
+                <Route path="/Portfolio/LangApp" element={<LangApp />} /> 
+              <Route path="/About" element={<About/>} />
+              <Route from="/" element={<Portfolio/>}/>
+              <Route exact path="/" element={<Navigate to="/Portfolio"/>} />
+              <Route path='/404' element={<PageNotFound/>} />
+              <Route path='*' element={<Navigate replace to='/404'/>} />
+            </Routes>
+          </ScrollToTop>      
         </Router>
         <Footer />
     </div>
