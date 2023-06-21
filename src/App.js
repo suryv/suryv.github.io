@@ -19,7 +19,7 @@ import PageNotFound from "./Components/PageNotFound"
 import LangApp from "./Components/Portfolio/LangApp"
 import StarbucksSharedPoints from "./Components/Portfolio/StarbucksSharedPoints"
 
-// import to ScrollToTop. Important for React Router bc it opens to place in instance of component
+// import to ScrollToTop. Important for React Router bc it opens to place in instant of component
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 

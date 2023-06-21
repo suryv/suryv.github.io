@@ -41,10 +41,18 @@ const Portfolio = () => {
     return (
       <div className="sub-content portfolio">
       {/* Link Projects */}
+
+        <div className="cp-intro-container">
+          <div className="cp-intro-content">
+            <p><b className="name">Hi, I'm Sury!</b> A UX designer with a background in frontend development, I'm driven by the desire to create products that positively impact people's daily lives.</p>
+          </div>
+
+        </div>
+
         <div className="project-list">
 
         <div className="project">
-          <div className="project-image-removethis">
+          <div className="project-img project-image-removethis">
             <Link to="/Portfolio/StarbucksSharedPoints">
               <img src={project_img2}  alt="project" className="project-image-filler" />
               <div class="img-description-layer">
@@ -64,7 +72,7 @@ const Portfolio = () => {
           </div>
 
           <div className="project">
-            <div className="project-image-removethis">
+            <div className="project-img project-image-removethis">
               <Link to="/Portfolio/LangApp" >
               <img src={project_img1}  alt="project" className="project-image-filler" />
                 <div class="img-description-layer">
@@ -84,7 +92,7 @@ const Portfolio = () => {
           </div>
 
           <div className="project">
-            <div className="project-image-removethis">
+            <div className="project-img project-image-removethis">
               <a href="https://dribbble.com/sury_villalobos" target="_blank" rel="noreferrer">
               <img src={project_img3}  alt="project" className="project-image-filler" />
                 <div class="img-description-layer">

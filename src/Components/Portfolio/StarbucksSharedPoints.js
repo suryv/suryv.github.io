@@ -43,29 +43,30 @@ import React from 'react';
 
 const StarbucksSharedPoints= () => {
   return (
-    <div className="project-container starbucks-sp mobile tablet">
-
+    <div className="project-container starbucks-sp mobile tablet main-container">
+    
       {/* First Section -- Intro Image & info */}
       <div className="project-section-outer project-intro">
 
         <div className="banner">
-          <div className="section-content sc-flex-horizontal no-margin">
-            <div className="sc-flex-item sc-flex-item-sixty banner-text">
-              <div className="banner-header"><h2>Starbucks Shared Stars</h2></div>
-              <div className="intro-text-container large-txt"> 
-              <p>Through the Starbucks Mobile App rewards program, customers earn Stars with every purchase which can be redeemed for drinks, customizations and other Starbucks merchandise. Stars can be redeemed only by the customer that earned them before the Stars expire. Some customers take a longer time to collect enough Stars to cash in and unfortunately the Stars expire before they can be used.</p>
-              <p>I set out to design a solution to help Starbucks customers make the most of their Stars through a group sharing feature.</p>
+          <div className="section-content sc-flex-horizontal">
+            <div className="sc-flex-item sc-flex-item-half banner-text sc-flex-margin-right">
+              <div className="banner-content">
+                <div className="banner-header"><h2>Starbucks Shared Stars</h2></div>
+                <div className="intro-text-container"> 
+                <p>Through the Starbucks Mobile App rewards program, customers earn Stars with every purchase which can be redeemed for drinks, customizations and other Starbucks merchandise. Stars can be redeemed only by the customer that earned them before the Stars expire. Some customers take a longer time to collect enough Stars to cash in and unfortunately the Stars expire before they can be used.</p>
+                <p>I set out to design a solution to help Starbucks customers make the most of their Stars through a group sharing feature.</p>
+                </div>
+                <div className="details accent-link">
+                  <p><b>Solo | Concept Project</b></p>
+                  <p><b>Role:</b> UX/UI Designer</p>
+                  <p><b>Timeline:</b> One Week</p>
+                  <p><b>Platform:</b> Mobile</p>
+                  <p><b>Tools & Methods:</b> Pencil/Paper, Figma, <a href="https://creative.starbucks.com/" target="blank">Starbucks Design System Guide</a>, <a href="http://www.gv.com/sprint/" target="blank">Design Sprint</a></p>
+                </div>
               </div>
-              <div className="details accent-link">
-                <p><b>Solo | Concept Project</b></p>
-                <p><b>Role:</b> UX/UI Designer</p>
-                <p><b>Timeline:</b> One Week</p>
-                <p><b>Platform:</b> Mobile</p>
-                <p><b>Tools & Methods:</b> Pencil/Paper, Figma, <a href="https://creative.starbucks.com/" target="blank">Starbucks Design System Guide</a>, <a href="http://www.gv.com/sprint/" target="blank">Design Sprint</a></p>
             </div>
-            
-            </div>
-            <div className="sc-flex-item sc-flex-item-forty flex-center-content content-background">
+            <div className="sc-flex-item sc-flex-item-half flex-center-content content-background">
               <LightgalleryItem src={SBMainStar}>
                 <img src={ SBMainStar }  alt="project main" />
             </LightgalleryItem>
@@ -306,15 +307,15 @@ const StarbucksSharedPoints= () => {
           <div className="section-content">
             <h4>Results</h4>
             <ul>
-              <li>2 out of 3 testers expressed confusion regarding the Stars meter on the Home Page stating it was unclear which Stars it represented, individual or group Stars.</li>
-              <li>2 out of 3 testers felt they need to know more about the benefits of the Stars sharing program before seeing an intimidating "Terms of Use" screen.</li>
-              <li>All testers felt they needed an indication that group invites are pending.</li>
-              <li>All testers said it makes more sense to apply order points to the group before user finalizes order.</li>
-              <li>All testers appreciated the freedom to share or keep their earned Stars once they were part of the Stars sharing program.</li>
+              <li><b>2 out of 3</b> testers expressed confusion regarding the Stars meter on the Home Page stating it was unclear which Stars it represented, individual or group Stars.</li>
+              <li><b>2 out of 3</b> testers felt they need to know more about the benefits of the Stars sharing program before seeing an intimidating "Terms of Use" screen.</li>
+              <li><b>All</b> testers felt they needed an indication that group invites are pending.</li>
+              <li><b>All</b> testers said it makes more sense to apply order points to the group before user finalizes order.</li>
+              <li><b>All</b> testers appreciated the freedom to share or keep their earned Stars once they were part of the Stars sharing program.</li>
             </ul>
           </div>
           <div className="section-content">
-              <p>The feedback from usability testing was very helpful in moving forward with the shared stars feature. With the feedback in mind, I reworked some of the flows and created a high fidelity prototype.</p>
+              <p>The feedback from usability testing was very helpful in moving forward with the shared stars feature. With the feedback in mind, I created a high fidelity prototype focusing on improving clarity, streamlining flows, and explaining the benefits of the feature.</p>
           </div>
         </div>
       </div> 

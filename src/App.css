@@ -14,9 +14,14 @@
   --header-font: "Bebas Neue";
   --logo-font: "Bebas Neue";
   --pnf-font: "Bebas Neue";
-  --logo-size: 3.8em;
-  --header-letter-spacing: 0.05em
+  --logo-size: 2.3em;
+  --logo-size-m: 10vw;
+  --nav-bar-size: 1.2em;
+  --nav-bar-size-m: 5vw;
+  --header-letter-spacing: 0.05em;
+  --project-intro-banner-font-size: 3em
 }
+
 
 
 body {
@@ -71,8 +76,8 @@ a:hover {
     "header header header"
     "content content content"
     "footer footer footer";
-  grid-template-rows: 8em 1fr 2.5em;  
   grid-template-columns: repeat(12,1fr);
+  grid-template-rows: 1fr 8fr 1fr;
   grid-gap: 10px;
   height: 100vh;
   margin: 0;
@@ -116,13 +121,16 @@ a:hover {
 }
 
 /* ////////////////////////////////////////Header & Nav////////////////////////////////////////// */
-
 .header {
-  grid-column: 1 / span 12;
+  grid-column: 2 / span 10;
   grid-row: 1;
+  position: relative;
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
-  padding: 32px 60px 22px 60px;
+  padding: 32px 0 22px 0px;
   align-items: center;
   /* position: sticky;
   top:35px; */
@@ -140,33 +148,33 @@ a:hover {
   margin: 0;
 }
 
-.nav-bar{
-  font-size: 20px
+.nav-elements{
+  font-size: var(--nav-bar-size)
 }
 
-.nav-bar li{
+.nav-elements li{
   list-style-type: none;
 }
 
-.nav-bar .nav-p{
+.nav-elements .nav-p{
   margin-right: 20px
 }
 
 
-/* .nav-bar a:hover, .footer a:hover, .contact a:hover, .about a:hover {
+/* .nav-elements a:hover, .footer a:hover, .contact a:hover, .about a:hover {
   color: var(--accent);
 } */
 
-.nav-bar a.active {
+.nav-elements a.active {
   border-bottom: 2px solid var(--darkest);
   font-weight: 500;
 }
 
-.nav-bar a{
+.nav-elements a{
   font-weight: 500;
 }
 
-.nav-bar a.active:hover {
+.nav-elements a.active:hover {
   border-bottom: 2px solid var(--accent);
 }
 
@@ -177,14 +185,35 @@ a:hover {
 }
 
 
+.menu-icon {
+  display: none;
+}
+
 /* ///////////////////////////  MAIN PAGE /////////////////////////////////// */
 
 .sub-content.portfolio {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 0px;
   margin-bottom: 40px
+}
+
+.cp-intro-container{
+  display: flex;
+}
+
+.cp-intro-content {
+  font-size: 1.5em;
+  margin: 6vw auto;
+  max-width: 600px;
+}
+
+.cp-intro-content b {
+  font-size: 1.5em;
+  font-family: var(--logo-font);
+  letter-spacing: var(--header-letter-spacing);
 }
 
 .project-list {
@@ -197,7 +226,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 0 1em;
+  margin: 0 1.5em;
   position: relative;
 }
 
@@ -243,10 +272,15 @@ a:hover {
   font-weight: 600;
   font-family: var(--body-font);
   font-size: var(--text-large);
+  margin-top: 0px
+}
+
+.project p {
+  margin: 4px 0 16px;
 }
 
 .project h3 {
-  margin: .5em 0px
+  margin: 0.3em 0px 0;
 }
 
 .project-list img {
@@ -261,7 +295,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 3.8em;
+  margin-top: 20px;
   margin-bottom: 3.8em
 }
 
@@ -338,7 +372,7 @@ a:hover {
 }
 
 .flex-item.project-intro p {
-  text-align: justify;
+  /* text-align: justify; */
   margin-top: 0px
 }
 
@@ -362,6 +396,7 @@ a:hover {
   grid-column: 1/span 12;
   grid-template-columns: repeat(12,1fr);
   grid-column-gap: 16px;
+  margin-bottom: 20px;
 } 
 
 .project-section-inner {
@@ -399,7 +434,7 @@ margin-right: 24px
 
 .project-intro p {
 margin-top:0px;
-text-align: justify
+/* text-align: justify */
 }
 
 .large-txt {
@@ -437,6 +472,11 @@ margin:0px
   font-weight: 600;
   color: var(--accent)
 }
+
+ .project-intro .banner h2 {
+  margin-top: 0px;
+  font-size: var(--project-intro-banner-font-size)
+ } 
 
 /* ///////////////////////////////////  IMAGES  /////////////////////////////// */
 .project-main-pic img {
@@ -506,10 +546,14 @@ margin:0px
 
 .starbucks-sp .banner {
   grid-column: 1/span 12;
-  background-color: #006241;
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-column-gap: 16px;
+}
+
+.starbucks-sp .ps-seven .banner {
+  background-color: #006241;
+  color: #fff
 }
 
 .starbucks-sp .ps-seven .banner-header{
@@ -517,22 +561,18 @@ margin:0px
   color: #FFFFFF;
 }
 
-.starbucks-sp .banner-text{
-  color: #ffffff;
-  
+.starbucks-sp .project-intro .content-background .react_lightgallery_item{
+  background-color: #006241;
 }
 
+
 .starbucks-sp .banner .section-content.sc-flex-horizontal{
-  grid-column: 1/span 12
+  grid-column: 2/span 10
 }
 
 .starbucks-sp .ps-seven .content-background {
   background-color: #cbe2db;
   background-image: url("./Assets/sb_bg_stars.png");
-}
-
-.starbucks-sp .project-intro .banner-text{
-  padding: 0px 20px 40px 60px
 }
 
 .starbucks-sp .button-one a, .starbucks-sp .button-one a, .starbucks-sp .button-one a:visited {
@@ -562,7 +602,7 @@ margin:0px
 }
 
 .starbucks-sp .details{
-  margin-top: 80px;
+  margin-top: 54px;
 }
 
 .starbucks-sp .card-content {
@@ -581,6 +621,13 @@ margin:0px
     max-width: 302px;
     }
 
+.starbucks-sp .project-intro .flex-center-content {
+  align-items: flex-start;
+}
+
+.starbucks-sp .ps-seven .banner .section-content.sc-flex-horizontal {
+  grid-column: 1/span 12;
+}
 
 
 /* ///////////////////////////////////404/////////////////////////////// */
@@ -609,27 +656,33 @@ margin:0px
   font-weight: 600;
 }
 
-
 /* /////////////////////RESPONSIVE//////////    PHONE      /////////////////////////////// */
 
 @media screen and (max-width:767px) {
-  .main-content{
-    grid-template-rows: 11.5em 1fr 5em;
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
   }
 
   .header {
-    display:block;
-    grid-column:1/span 12;
-    padding: 20px;
+    grid-column: 1 / span 12;
+    margin: 0 2em;
+    grid-row: 1;
+    position: relative;
+    }
+
+  .header-name a, .header-name a:visited {
+    font-size: var(--logo-size-m);
   }
 
-  .nav-bar {
-    font-size: 1.5rem;
+  .nav-elements {
+    font-size: var(--nav-bar-size-m);
     text-align: center;
-    padding-top: 20px;
+    padding-top: 8px;
 }
 
-.nav-bar a.active:hover {
+.nav-elements a.active:hover {
   border-bottom: 2px solid var(--accent);
 }
 
@@ -664,16 +717,25 @@ margin:0px
 }
 
 .sub-content {
-  margin: 1em 1em !important;
+  margin: 1em 1.5em !important;
   grid-column: 1/span 12;
 }
 
+.sub-content.portfolio {
+  margin: 0px 1.5em !important;
+}
+
 .project-list{
-  flex-direction:column
+  flex-direction:column;
+  margin: 5vh 0px 0px 0px
 }
 
 .project-list .project {
-  margin-bottom: 1em
+  margin: 0 0 2em 0
+}
+
+.project-img a img {
+  width:100%
 }
 
 .img-description {
@@ -708,6 +770,10 @@ h4 {
   font-size: 1.4em;
 }
 
+.project-intro .banner h2 {
+  font-size: 2.5em;
+}
+
 .project-section-inner {
   grid-column: 1/span 12;
   padding: 0 1.5em;
@@ -735,8 +801,13 @@ h4 {
 }
 
 
-.starbucks-sp .project-intro .banner-text {
-  padding:0px 1.5em
+.starbucks-sp .project-intro .banner-content {
+  padding:0px 0px 1.5em 0px;
+  margin: 0px 2em
+}
+
+.starbucks-sp .banner .section-content.sc-flex-horizontal{
+  grid-column: 1/span 12;
 }
 
 .starbucks-sp .ps-seven .banner-text.centered-txt {
@@ -744,7 +815,7 @@ h4 {
 }
 
 .starbucks-sp .details {
-  margin-top:40px
+  margin-top:28px
 }
 
 .starbucks-sp .sketch-container {
@@ -758,12 +829,36 @@ h4 {
 }
 
 .starbucks-sp .ps-four .card-content {
-  height: 340px
+  display: flex;
+  flex-direction: column
+}
+
+.starbucks-sp .ps-six .sc-flex-item.sc-flex-item-half.centered-txt img {
+  width: 80%;
+}
+
+}
+
+
+
+/* /////////////////////RESPONSIVE//////////    PHONE   XS /////////////////////////////// */
+
+
+
+
+@media screen and (min-width:500px) and (max-width:768px) {
+  .header-name a, .header-name a:visited {
+    font-size: 7vw;
+  }
+
+  .nav-elements {
+    font-size: 3.5vw;
+    text-align: center;
+    padding-top: 8px;
 }
 
 
 }
-
 
 
 
@@ -771,22 +866,21 @@ h4 {
 /* /////////////////////RESPONSIVE//////////    TABLET    /////////////////////////////// */
 
 @media screen and (min-width:768px) and (max-width:1023px) {
-  .main-content{
-    grid-template-rows: 11.5em 1fr 5em;
-  }
 
   .header {
-    grid-column: 1/span 12;
-    padding: 32px 1.5em 22px 1em;
-}
+  grid-column: 1 / span 12;
+  margin: 0 2em;
+  grid-row: 1;
+  position: relative;
+  };
 
-  .nav-bar {
+  .nav-elements {
     font-size: 1.5rem;
     text-align: center;
     /* padding-top: 20px; */
 }
 
-.nav-bar a.active:hover {
+.nav-elements a.active:hover {
   border-bottom: 2px solid #b38f2d;
 }
 
@@ -804,26 +898,35 @@ h4 {
   line-height: .6rem;
 }
 
-.about {
+/* .about {
   flex-direction: column-reverse;
-}
+} */
 
 .about-content.about-img {
   margin: 0 auto 2.5em auto;
 }
 
 .sub-content {
-  margin: 5em 1.5em !important;
+  margin: 20px 2em 5em 2em !important;
   grid-column: 1/span 12;
+}
+
+.sub-content .about-bio{
+  margin-right: 24px;
+}
+
+.sub-content.portfolio {
+  margin: 0px 2em !important;
 }
 
 .project-list {
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  grid-gap: 2em
 }
 
 .project-list .project {
-  margin-bottom: 1em
+  margin: 0 0 2em
 }
 
 .img-description {
@@ -863,6 +966,11 @@ h4 {
   font-size: 1.4em;
 }
 
+.project-intro .banner-header h2 {
+  font-size: 2.7em;
+  margin-top: 0px;
+}
+
 .project-section-inner {
   grid-column: 1/span 12;
   margin: 0 1.5em;
@@ -876,8 +984,13 @@ h4 {
   margin: 0 auto;
 }
 
-.starbucks-sp .project-intro .banner-text {
-  padding:0px 1.5em
+.starbucks-sp .project-intro .banner-content {
+  padding:0px 0px 1.5em 0px;
+  margin: 0px 2em
+}
+
+.starbucks-sp .banner .section-content.sc-flex-horizontal{
+  grid-column: 1/span 12;
 }
 
 .card-container {
