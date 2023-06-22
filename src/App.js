@@ -13,11 +13,12 @@ import Header from "./Components/Header";
 import Portfolio from "./Components/Portfolio";
 import About from "./Components/About";
 import Footer from "./Components/Footer";
-import PageNotFound from "./Components/PageNotFound"
+import PageNotFound from "./Components/PageNotFound";
 
 // import Projects
-import LangApp from "./Components/Portfolio/LangApp"
-import StarbucksSharedPoints from "./Components/Portfolio/StarbucksSharedPoints"
+import LangApp from "./Components/Portfolio/LangApp";
+import StarbucksSharedPoints from "./Components/Portfolio/StarbucksSharedPoints";
+import UIWork from "./Components/Portfolio/UIWork";
 
 // import to ScrollToTop. Important for React Router bc it opens to place in instant of component
 import { useEffect } from "react";
@@ -44,6 +45,7 @@ function App() {
               <Route path="/Portfolio" element={<Portfolio/>} />
                 <Route path="/Portfolio/StarbucksSharedPoints" element={<StarbucksSharedPoints />} /> 
                 <Route path="/Portfolio/LangApp" element={<LangApp />} /> 
+                <Route path="/Portfolio/UIWork" element={<UIWork />} /> 
               <Route path="/About" element={<About/>} />
               <Route from="/" element={<Portfolio/>}/>
               <Route exact path="/" element={<Navigate to="/Portfolio"/>} />

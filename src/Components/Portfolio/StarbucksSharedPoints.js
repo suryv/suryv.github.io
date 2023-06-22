@@ -54,7 +54,7 @@ const StarbucksSharedPoints= () => {
               <div className="banner-content">
                 <div className="banner-header"><h2>Starbucks Shared Stars</h2></div>
                 <div className="intro-text-container"> 
-                <p>Through the Starbucks Mobile App rewards program, customers earn Stars with every purchase which can be redeemed for drinks, customizations and other Starbucks merchandise. Stars can be redeemed only by the customer that earned them before the Stars expire. Some customers take a longer time to collect enough Stars to cash in and unfortunately the Stars expire before they can be used.</p>
+                <p>Through the Starbucks Mobile App rewards program, customers earn Stars with every purchase which can be redeemed for drinks, customizations, and other Starbucks merchandise. Stars can be redeemed only by the customer that earned them before the Stars expire. Some customers take a longer time to collect enough Stars to cash in and unfortunately the Stars expire before they can be used.</p>
                 <p>I set out to design a solution to help Starbucks customers make the most of their Stars through a group sharing feature.</p>
                 </div>
                 <div className="details accent-link">
@@ -118,7 +118,7 @@ const StarbucksSharedPoints= () => {
         <div className="project-section-inner">
           <div className="section-header"><h3>Project Origin & Initial Research</h3></div>
           <div className="section-content">
-            <p>The idea for this project originated from a conversation with a group of people about Starbucks. The conversation turned to the Stars rewards program. While most involved in the conversation feel positive about the program, some people expressed dissatisfaction with the program claiming they rarely use it. Seeing the need for an improved user experience, I took the opportunity to conduct mini user interviews, asking the participants about their feelings and thoughts on the Starbucks Stars rewards program. </p>
+            <p>The idea for this project originated from a conversation with a group of people about Starbucks. The conversation turned to the Stars rewards program. While most involved in the conversation feel positive about the program, some people expressed dissatisfaction with the program claiming they rarely use it. Seeing the need for an improved user experience, I took the opportunity to conduct mini-user interviews, asking the participants about their feelings and thoughts on the Starbucks Stars rewards program. </p>
             <p>
             Participants of the conversation expressed the following pain points:
             </p>
@@ -202,7 +202,7 @@ const StarbucksSharedPoints= () => {
             <div className="sc-flex-item sc-flex-three card-container sc-flex-margin-right">
               <div className="card-content">
                 <div className="centered-txt"><b>Airlines, hotels, and credit cards point sharing</b></div>
-                <p>Members can share points, purchase a service for another person or transfer points to another existing member. </p>
+                <p>Members can share points, purchase a service for another person, or transfer points to another existing member. </p>
                 <p>Scandinavian Airlines is a little different. Members can also pool their airline points to redeem for later group trips by inviting existing members by using a member number.</p>
               </div>
             </div>
@@ -308,7 +308,7 @@ const StarbucksSharedPoints= () => {
             <h4>Results</h4>
             <ul>
               <li><b>2 out of 3</b> testers expressed confusion regarding the Stars meter on the Home Page stating it was unclear which Stars it represented, individual or group Stars.</li>
-              <li><b>2 out of 3</b> testers felt they need to know more about the benefits of the Stars sharing program before seeing an intimidating "Terms of Use" screen.</li>
+              <li><b>2 out of 3</b> testers felt they needed to know more about the benefits of the Stars sharing program before seeing an intimidating "Terms of Use" screen.</li>
               <li><b>All</b> testers felt they needed an indication that group invites are pending.</li>
               <li><b>All</b> testers said it makes more sense to apply order points to the group before user finalizes order.</li>
               <li><b>All</b> testers appreciated the freedom to share or keep their earned Stars once they were part of the Stars sharing program.</li>

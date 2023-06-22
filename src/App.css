@@ -14,12 +14,15 @@
   --header-font: "Bebas Neue";
   --logo-font: "Bebas Neue";
   --pnf-font: "Bebas Neue";
-  --logo-size: 2.3em;
+  --logo-size: 3.5em;
   --logo-size-m: 10vw;
+  --logo-size-s: 8vw;
   --nav-bar-size: 1.2em;
-  --nav-bar-size-m: 5vw;
+  --nav-bar-size-m: 4.5vw;
+  --nav-bar-size-s: 3.5vw;
   --header-letter-spacing: 0.05em;
-  --project-intro-banner-font-size: 3em
+  --project-intro-banner-font-size: 3em;
+  --gutter: 0px 1.5em
 }
 
 
@@ -86,35 +89,36 @@ a:hover {
 /* ////////////////////////////////////////Footer////////////////////////////////////////// */
 
 .footer {
-  grid-column: 2 / span 10;
-  font-size: .9rem;
-  display: flex;
-  flex-wrap:wrap;
+  grid-column: 2/span 10;
+  text-align: center;
+  font-size: 14px;
   grid-row: 3;
-  height: 100px;
-
+  padding: 2.5em 0;
+  display: flex;
 }
 
-.footer-contact{
-  flex: 1 1;
+.footer-name{
+  font-size: 1.2em
+}
+
+.footer-contact {
   display: flex;
   flex-wrap:wrap;
+  margin-top: 2em;
+  flex: 1
 }
 
 .footer-credit{
-  display: flex
+  margin-top:2em
 }
 
 .footer-dot {
-  margin: 0px 20px 0px 20px;
-  line-height: 1rem;
-  font-size: 1.12rem;
+  margin: 0px 12px 0px 12px;
+  line-height: .7em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
-.footer-react {
-  margin-left:16px
-}
 
 .footer a {
   font-weight: 500;
@@ -335,6 +339,37 @@ a:hover {
   margin: 0px
 }
 
+
+
+/* ///////////////////////////////////// UI GALLERY   /////////////////////////////// */
+.ui-gallery-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 2em
+}
+
+.ui-gallery-column {
+  flex:1
+} 
+
+.ui-gallery-column:nth-child(even){
+  margin-left: 1em;
+}
+
+.ui-gallery-column:nth-child(odd){
+  margin-right: 1em;
+}
+
+.ui-work-text {
+  margin-bottom: 6vw;
+}
+
+.ui-small-txt{
+  font-size: .9em;
+  margin-bottom: 1em
+}
+
 /* ///////////////////////////////////    Projects    /////////////////////////////// */
 
 .fade-in-section {
@@ -503,6 +538,7 @@ margin:0px
 .react_lightgallery_item img {
   max-width: 100%;
   min-width: 100%;
+  cursor: pointer
 }
 
 .picture-inner-width {
@@ -667,7 +703,7 @@ margin:0px
 
   .header {
     grid-column: 1 / span 12;
-    margin: 0 2em;
+    margin: var(--gutter);
     grid-row: 1;
     position: relative;
     }
@@ -687,25 +723,19 @@ margin:0px
 }
 
 .footer {
-  font-size: 0.7rem;
-  justify-content: center;
   grid-column: 1/span 12;
-  display: flex;
-  flex-direction: column;
+  flex-direction:column ;
 }
 
-.footer-contact {
+.footer-contact, .footer-credit{
   justify-content: center;
+  margin: 1em
 }
 
-.footer-contact, .footer-credit {
-  margin: 1em;
-  text-align: center;
-  justify-content: center;
-}
 
 .footer-dot {
-  line-height: .6rem;
+  line-height: .6em;
+  margin:0 8px 0 8px
 }
 
 .about {
@@ -719,6 +749,19 @@ margin:0px
 .sub-content {
   margin: 1em 1.5em !important;
   grid-column: 1/span 12;
+}
+
+.ui-gallery-row {
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+.ui-gallery-column:nth-child(odd){
+  margin-right: 0px;
+}
+
+.ui-gallery-column:nth-child(even){
+  margin-left: 0px;
 }
 
 .sub-content.portfolio {
@@ -776,7 +819,7 @@ h4 {
 
 .project-section-inner {
   grid-column: 1/span 12;
-  padding: 0 1.5em;
+  margin:var(--gutter)
 }
 
 .sc-flex-horizontal {
@@ -803,7 +846,7 @@ h4 {
 
 .starbucks-sp .project-intro .banner-content {
   padding:0px 0px 1.5em 0px;
-  margin: 0px 2em
+  margin: var(--gutter)
 }
 
 .starbucks-sp .banner .section-content.sc-flex-horizontal{
@@ -842,34 +885,26 @@ h4 {
 
 
 /* /////////////////////RESPONSIVE//////////    PHONE   XS /////////////////////////////// */
-
-
-
-
 @media screen and (min-width:500px) and (max-width:768px) {
   .header-name a, .header-name a:visited {
-    font-size: 7vw;
+    font-size: var(--logo-size-s);
   }
 
   .nav-elements {
-    font-size: 3.5vw;
+    font-size: var(--nav-bar-size-s);
     text-align: center;
     padding-top: 8px;
 }
 
 
 }
-
-
-
-
 /* /////////////////////RESPONSIVE//////////    TABLET    /////////////////////////////// */
 
 @media screen and (min-width:768px) and (max-width:1023px) {
 
   .header {
   grid-column: 1 / span 12;
-  margin: 0 2em;
+  margin: var(--gutter);
   grid-row: 1;
   position: relative;
   };
@@ -885,7 +920,6 @@ h4 {
 }
 
 .footer {
-  font-size: 0.7em;
   flex-direction: column
 }
 
@@ -894,13 +928,6 @@ h4 {
     margin: 1em;
 }
 
-.footer-dot {
-  line-height: .6rem;
-}
-
-/* .about {
-  flex-direction: column-reverse;
-} */
 
 .about-content.about-img {
   margin: 0 auto 2.5em auto;
@@ -973,7 +1000,7 @@ h4 {
 
 .project-section-inner {
   grid-column: 1/span 12;
-  margin: 0 1.5em;
+  margin: var(--gutter)
 }
 
 .sc-flex-horizontal {
@@ -986,7 +1013,7 @@ h4 {
 
 .starbucks-sp .project-intro .banner-content {
   padding:0px 0px 1.5em 0px;
-  margin: 0px 2em
+  margin: var(--gutter)
 }
 
 .starbucks-sp .banner .section-content.sc-flex-horizontal{

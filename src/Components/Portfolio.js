@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import project_img1 from "../Assets/project_img_langapp.png";
 import project_img2 from "../Assets/project_img_sb.png";
-import project_img3 from "../Assets/project_img_dribbble_logo.png";
+import project_img3 from "../Assets/project_img_ui.png";
 
 
 // // Toggle Image on Hover
@@ -93,21 +93,22 @@ const Portfolio = () => {
 
           <div className="project">
             <div className="project-img project-image-removethis">
-              <a href="https://dribbble.com/sury_villalobos" target="_blank" rel="noreferrer">
+
+            <Link to="/Portfolio/UIWork" >
               <img src={project_img3}  alt="project" className="project-image-filler" />
                 <div class="img-description-layer">
                   {/* <h3 class="img-description">Click to Read More</h3> */}
                 </div>
-            </a>
+              </Link>
             </div>
             <div className="project-desc">
-              <h3>Dribbble</h3>
-              <p>Click the link to see my collection of UI work.</p>
+              <h3>UI Designs</h3>
+              <p>A collection of my UI designs.</p>
+              <Link to="/Portfolio/UIWork" >
                 <div class="button read-more">
-                  <a href="https://dribbble.com/sury_villalobos" target="_blank" rel="noreferrer">
-                    <h4>Dribbble Profile</h4>
-                  </a>
+                  <h4>See More</h4>
                 </div>
+              </Link>
             </div>
           </div>
 
