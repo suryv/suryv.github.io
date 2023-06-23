@@ -1,14 +1,33 @@
 import '../../App.css';
+import "lightgallery.js/dist/css/lightgallery.css";
+import { LightgalleryItem } from "react-lightgallery";
 
-import LangAppMainImg from "../../Assets/langapp_img1.png";
-import LangAppCompAnalysis from "../../Assets/langapp_ca.png";
-import LangAppAffinityMap from "../../Assets/langapp_am.png";
-import LangAppPersona from "../../Assets/langapp_persona.png";
-import LangAppMatrix from "../../Assets/langapp_matrix.png";
-import LangAppWireFrames from "../../Assets/langapp_lofiwf.png";
-import LangAppMidFiWF from "../../Assets/langapp_midfiwf.png";
-import LangAppHiFiWF from "../../Assets/langapp_hifiwf.png";
-import LangAppFinal from "../../Assets/langapp_final.png";
+import LangAppMainImg from "../../Assets/LangApp/langapp_img1.png";
+import LangAppCompAnalysis from "../../Assets/LangApp/langapp_ca.png";
+import LangAppAffinityMap from "../../Assets/LangApp/langapp_am.png";
+import LangAppPersona from "../../Assets/LangApp/langapp_persona.png";
+import LangAppMatrix from "../../Assets/LangApp/langapp_matrix.png";
+import LangAppWireFrames1 from "../../Assets/LangApp/langapp_lf1.png";
+import LangAppWireFrames2 from "../../Assets/LangApp/langapp_lf2.png";
+import LangAppWireFrames3 from "../../Assets/LangApp/langapp_lf3.png";
+import LangAppMidFiWF1 from "../../Assets/LangApp/langapp_mf1.png";
+import LangAppMidFiWF2 from "../../Assets/LangApp/langapp_mf2.png";
+import LangAppMidFiWF3 from "../../Assets/LangApp/langapp_mf3.png";
+import LangAppMidFiWF4 from "../../Assets/LangApp/langapp_mf4.png";
+import LangAppMidFiWF5 from "../../Assets/LangApp/langapp_mf5.png";
+import LangAppMidFiWF6 from "../../Assets/LangApp/langapp_mf6.png";
+import LangAppHiFiWF1 from "../../Assets/LangApp/langapp_hf1.png";
+import LangAppHiFiWF2 from "../../Assets/LangApp/langapp_hf2.png";
+import LangAppHiFiWF3 from "../../Assets/LangApp/langapp_hf3.png";
+import LangAppHiFiWF4 from "../../Assets/LangApp/langapp_hf4.png";
+import LangAppHiFiWF5 from "../../Assets/LangApp/langapp_hf5.png";
+import LangAppHiFiWF6 from "../../Assets/LangApp/langapp_hf6.png";
+import LangAppHiFiWF7 from "../../Assets/LangApp/langapp_hf7.png";
+import LangAppHiFiWF8 from "../../Assets/LangApp/langapp_hf8.png";
+import LangAppFinal1 from "../../Assets/LangApp/langapp_f1.png";
+import LangAppFinal2 from "../../Assets/LangApp/langapp_f2.png";
+import LangAppFinal3 from "../../Assets/LangApp/langapp_f3.png";
+import LangAppFinal4 from "../../Assets/LangApp/langapp_f4.png";
 
 import React from 'react';
 
@@ -34,32 +53,37 @@ import React from 'react';
 const LangApp= () => {
   return (
     <div className="project-container lang-app">
-      {/* First section Intro*/}
-      <div className="project-section-outer">
-        <div className="project-section-inner lang-app-first">     
-        <div className="section-header"><h2>Reto</h2></div>
-        <div className="section-content sc-flex-horizontal">
-          <div className="flex-item project-intro">
-            <p>Reto is a language practice app with a game-like approach that connects people learning foreign languages. Users with different learning styles and interests can benefit from a variety of topics and methods of learning to help with maintaining motivation.</p>
-            <ul>
-                <li>Concept</li>
-                <li>Solo Project</li>
-                <li>Role: UX/UI Designer, Researcher</li>
-                <li>Timeline: 10 weeks</li>
-                <li>Platform: Mobile</li>
-                <li>Tools: Figma, Maze Remote Testing</li>
-              </ul>
-          </div>
-          <div className="flex-item project-main-pic">
-            <img src={LangAppMainImg}  alt="project details" className="project-image-filler" />
-          </div>
-          </div>
+
+<div className="project-section-outer project-intro">
+
+<div className="banner">
+  <div className="section-content sc-flex-horizontal">
+    <div className="sc-flex-item sc-flex-item-half banner-text sc-flex-margin-right">
+      <div className="banner-content">
+        <div className="banner-header"><h2>Reto</h2></div>
+        <div className="intro-text-container"> 
+        <p>Reto is a language practice app with a game-like approach that connects people learning foreign languages. Users with different learning styles and interests can benefit from a variety of topics and methods of learning to help with maintaining motivation.</p>
+        </div>
+        <div className="details accent-link">
+          <p><b>Solo | Concept Project</b></p>
+          <p><b>Role:</b> UX/UI Designer, Researcher</p>
+          <p><b>Timeline:</b> 10 Weeks</p>
+          <p><b>Platform:</b> Mobile</p>
+          <p><b>Tools & Methods:</b> Pencil/Paper, Figma, Maze Remote Testing</p>
         </div>
       </div>
-
+    </div>
+    <div className="sc-flex-item sc-flex-item-half flex-center-content content-background">
+    <LightgalleryItem src={LangAppMainImg}>
+              <img src={LangAppMainImg}  alt="project details" className="project-image-filler" />
+            </LightgalleryItem>
+    </div>
+  </div>
+</div>
+</div>
       {/* Second section Background */}
 
-      <div className="project-section-outer">
+      <div className="project-section-outer ps-two">
         <div className="project-section-inner">
           <div className="section-header"><h3>Background</h3></div>
           <div className="section-content">
@@ -72,7 +96,7 @@ const LangApp= () => {
 
       {/* Third section: Research Analysis */}
 
-      <div className="project-section-outer">
+      <div className="project-section-outer ps-three">
         <div className="project-section-inner">
           <div className="section-header"><h3>Research and Insights</h3></div>
           <div className="section-content">
@@ -81,16 +105,22 @@ const LangApp= () => {
           <div className="section-content">
             <h4>Competitive Analysis</h4>
             <p>As there are plenty of language learning apps on the market for students to use, my research for this project first focused on competitive analysis against the most popular language learning apps to find any gaps in their features and any opportunities for improvement.</p>
-            <div className="lang-app-img" >
-              <img src={LangAppCompAnalysis}  alt="competitor analysis"/>
+            <div className="lang-app-img centered-txt" >
+              <LightgalleryItem src={LangAppCompAnalysis}>
+                <img src={LangAppCompAnalysis}  alt="competitor analysis"/>
+              </LightgalleryItem>
+              
             </div>
-            <p> From this research, I found that many of the apps were repetative, limited in content and failed to include any meaningful user-to-user interaction.</p>
+            <p> From this research, I found that many of the apps were repetitive, limited in content, and failed to include any meaningful user-to-user interaction.</p>
           </div>
           <div className="section-content">
             <h4>User Interviews</h4>
-            <p>After analysing existing language apps, I turned to User Interviews to discover what people need when they are learning a language. My goal was to understand their methods of learning, study habits, motivations and pain points. I interviewed 5 students enrolled in a foreign language class at a community college and analysed their responses to find common themes.</p>
-            <div className="lang-app-img">
-              <img src={LangAppAffinityMap}  alt="affinity map"/>
+            <p>After analyzing existing language apps, I turned to User Interviews to discover what people need when they are learning a language. My goal was to understand their methods of learning, study habits, motivations, and pain points. I interviewed 5 students enrolled in a foreign language class at a community college and analysed their responses to find common themes.</p>
+            <div className="lang-app-img centered-txt">
+              <LightgalleryItem src={LangAppAffinityMap}>
+                <img src={LangAppAffinityMap}  alt="affinity map"/>
+              </LightgalleryItem>
+              
             </div>
             <div>
               The data from these interviews revealed that students:
@@ -109,14 +139,15 @@ const LangApp= () => {
 
 
       {/* Fourth section: Persona */}
-   
-      <div className="project-section-outer">
+      <div className="project-section-outer ps-four">
         <div className="project-section-inner">
           <div className="section-header"><h3>Persona</h3></div>
           <div className="section-content">
             <p>To help me focus my efforts to help people learning a language, I used the insights I gathered from my 5 interviewees and created one persona to represent them all. Meet Jordan!</p>
-            <div className="lang-app-img" >
-              <img src={LangAppPersona}  alt="persona" />
+            <div className="lang-app-img centered-txt" >
+              <LightgalleryItem src={LangAppPersona}>
+                <img src={LangAppPersona}  alt="persona" />
+              </LightgalleryItem>
           </div>
           </div>
         </div>
@@ -125,7 +156,7 @@ const LangApp= () => {
 
       {/* Fifth section: Problem */}
     
-      <div className="project-section-outer">
+      <div className="project-section-outer ps-five">
         <div className="project-section-inner">
           <div className="section-header"><h3>Problem</h3></div>
           <div className="section-content">
@@ -146,13 +177,13 @@ const LangApp= () => {
       </div>
       
 
-      {/* Fifth section: HMW and Features */} 
+      {/* Six section: HMW and Features */} 
 
-      <div className="project-section-outer">
+      <div className="project-section-outer ps-six">
         <div className="project-section-inner">
           <div className="section-header"><h3>Features</h3></div>
           <div className="section-content sc-flex-horizontal">
-            <div className="flex-item lang-app-feature">
+            <div className="sc-flex-item sc-flex-item-half sc-flex-margin-right">
               <p>For the solution, I focused on Jason's interests and pain points to make studying more fun, interactive and personalized for him. I made a list of features that he might need the most and organized them on a matrix to help prioritize certain features over others for an MVP.</p>
               <p>The language app MVP needs:</p>
               <div>
@@ -160,19 +191,22 @@ const LangApp= () => {
                   <li>Initial survey to find users' interests</li>
                   <li>Ways to interact with other language learners (quiz creation, random topic generator for chat)</li>
                   <li>Grammar explanations and practice</li>
-                  <li>Reading, writing, speaking and listening sections</li>
+                  <li>Reading, writing, speaking, and listening sections</li>
                 </ul>
             </div>
             </div>
-            <div className="flex-item lang-app-img lang-app-matrix" >
-            <img src={LangAppMatrix}  alt="feature matrix" />
-          </div>
+            <div className="sc-flex-item sc-flex-item-half" >
+              <LightgalleryItem src={LangAppMatrix}>
+                <img src={LangAppMatrix}  alt="feature matrix" />
+              </LightgalleryItem>
+            
+            </div>
           </div>
         </div>
       </div>
 
-       {/* Sixth section: Wireframes */}
-      <div className="project-section-outer">
+       {/* Seven section: Wireframes */}
+      <div className="project-section-outer ps-seven">
         <div className="project-section-inner">
           <div className="section-header"><h3>Wireframes and Moderated Testing</h3></div>
           <div className="section-content">
@@ -188,10 +222,26 @@ const LangApp= () => {
           <div className="section-content">
             {/* FUN, Approachable, Interactive, Meaningful */}
             <p>I turned the sketches to mid-fidelity wireframes, allowing me to create a prototype for testing two features that focused on users interacting with one another: 1) Breaking the ice while chatting with a friend and 2) creating quizzes for other users. With the help of moderated testing using 5 testers, I was able to see the weaknesses and strengths of my intial designs.</p>
+          </div>
+          <div className="section-content sc-flex-horizontal unset-width">
             {/* Image of wireframes */}
             <div className="lang-app-img">
-              <img src={LangAppWireFrames}  alt="wireframes" />
+              <LightgalleryItem src={LangAppWireFrames1}>
+                <img src={LangAppWireFrames1}  alt="wireframes" />
+              </LightgalleryItem>
             </div>
+            <div className="lang-app-img">
+              <LightgalleryItem src={LangAppWireFrames2}>
+                <img src={LangAppWireFrames2}  alt="wireframes" />
+              </LightgalleryItem>
+            </div>
+            <div className="lang-app-img">
+              <LightgalleryItem src={LangAppWireFrames3}>
+                <img src={LangAppWireFrames3}  alt="wireframes" />
+              </LightgalleryItem>
+            </div>
+          </div>
+          <div className="section-content">
             <h4>Testing Results</h4>
             <div>
               <ul>
@@ -203,9 +253,44 @@ const LangApp= () => {
           </div>
           <div className="section-content">
             <p> The feedback on the first prototype was discouraging. I decided to go back to the drawing board and start my designs from scratch keeping in mind the feedback, the list of features, and "How might we...." statements. Going back to the "How might we...." statements, I thought about how the features had to be fun, approachable, interactive, and meaningful. My approach then turned to gamifying the learning experience. I decided to focus more on creating a fun competitive environment for language learners with content provided by the app. I created mid-fidelity wireframes and prototypes to test two features: 1) competing in fun games with other learners and 2) practicing grammar. </p>
-            <div  className="lang-app-img">
-              <img src={LangAppMidFiWF}  alt="wireframes"/>
+          </div>
+          <div className="section-content">
+            <div className="section-row sc-flex-horizontal unset-width flex-three">
+              <div  className="lang-app-img">
+                <LightgalleryItem src={LangAppMidFiWF1}>
+                  <img src={LangAppMidFiWF1}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+              <div  className="lang-app-img">
+                <LightgalleryItem src={LangAppMidFiWF2}>
+                  <img src={LangAppMidFiWF2}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+              <div  className="lang-app-img">
+                <LightgalleryItem src={LangAppMidFiWF3}>
+                  <img src={LangAppMidFiWF3}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+              <div  className="lang-app-img">
+                <LightgalleryItem src={LangAppMidFiWF4}>
+                  <img src={LangAppMidFiWF4}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+              <div  className="lang-app-img">
+                <LightgalleryItem src={LangAppMidFiWF5}>
+                  <img src={LangAppMidFiWF5}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+              <div  className="lang-app-img">
+                <LightgalleryItem src={LangAppMidFiWF6}>
+                  <img src={LangAppMidFiWF6}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
             </div>
+          </div>
+
+
+          <div className="section-content">
             <div>Through another round of moderated testing with the same 5 test users I found that:
               <ul>
                 <li>The content was overall more intuitive and user friendly</li>
@@ -218,36 +303,78 @@ const LangApp= () => {
         </div>
       </div>
 
-      {/* Seventh section: Hi Def and Unmoderated Testing */}
+      {/* Eight section: Hi Def and Unmoderated Testing */}
 
-      <div className="project-section-outer">
+      <div className="project-section-outer ps-eight">
         <div className="project-section-inner">
           <div className="section-header"><h3>High Def and Unmoderated Testing</h3></div>
           <div className="section-content">
             <p>After taking all the findings from the moderated usability testing into consideration, I made changes to the Battle feature and the Grammar Practice feature to improve their usability and clarity. I used Maze.co to conduct a round of unmoderated testing with the same 5 test users as before.</p>
-            <div className="lang-app-img">
-              <img src={LangAppHiFiWF}  alt="wireframes"/>
           </div>
+          <div className="section-content">
+            <div className="section-row sc-flex-horizontal unset-width flex-four">
+                <div className="lang-app-img">
+                <LightgalleryItem src={LangAppHiFiWF1} >
+                  <img src={LangAppHiFiWF1}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+              <div className="lang-app-img">
+                <LightgalleryItem src={LangAppHiFiWF2} >
+                  <img src={LangAppHiFiWF2}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+              <div className="lang-app-img">
+                <LightgalleryItem src={LangAppHiFiWF3} >
+                  <img src={LangAppHiFiWF3}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+              <div className="lang-app-img">
+                <LightgalleryItem src={LangAppHiFiWF4} >
+                  <img src={LangAppHiFiWF4}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+              <div className="lang-app-img">
+                <LightgalleryItem src={LangAppHiFiWF5} >
+                  <img src={LangAppHiFiWF5}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+              <div className="lang-app-img">
+                <LightgalleryItem src={LangAppHiFiWF6} >
+                  <img src={LangAppHiFiWF6}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+              <div className="lang-app-img">
+                <LightgalleryItem src={LangAppHiFiWF7} >
+                  <img src={LangAppHiFiWF7}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+              <div className="lang-app-img">
+                <LightgalleryItem src={LangAppHiFiWF8} >
+                  <img src={LangAppHiFiWF8}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+            </div>
+            
           </div>
           {/* Outcomes of testing */}
           <div className="section-content">
             <h4>Testing Results</h4>
             <div>
               <ul>
-                <li>All users need clear indication of how long they have until a battle begins </li>
-                <li>Most users felt they did something wrong when Challenging a friend to a battle because the redirect to the Battles landing page did not feel any different than selecting the Battles menu option</li>
-                <li>The app needs to indicate when a user is online and available to participate in a battle</li>
+                <li>All users need clear indication of how long they have until a Battle begins </li>
+                <li>Most users felt they did something wrong when Challenging a friend to a Battle because the redirect to the Battles landing page did not feel any different than selecting the Battles menu option</li>
+                <li>The app needs to indicate when a user is online and available to participate in a Battle</li>
                 <li>The Grammar Practice was still unclear on the duration of the practice experience</li>
-                <li>All users thought the "Back" functionality was not clear because they didn't know what place in the experience "Back" refered to</li>
+                <li>All users thought the "Back" functionality was not clear because they didn't know what place in the experience "Back" referred to</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Eight section: Final */}
+      {/* Ninth section: Final */}
   
-      <div className="project-section-outer">
+      <div className="project-section-outer ps-nine">
         <div className="project-section-inner">
           <div className="section-header"><h3>Final Design</h3></div>
           <div className="section-content">
@@ -255,14 +382,41 @@ const LangApp= () => {
             <div>
               <ul>
                 <li>Added an Online feature to indicate that the user is online and available to battle</li>
-                <li>Added a countdown to tell users how long they have before the battle starts</li>
+                <li>Added a countdown to tell users how long they have before the Battle starts</li>
                 <li>Removed the redirect to the Battles landing page from the friends page and implemented a pop up feature instead</li>
                 <li>Added an Exit button to the Grammar practice experience as well as a progress bar to indicate how many practice questions a user has</li>
               </ul>
             </div>
-            <div className="lang-app-img">
-            <img src={LangAppFinal}  alt="wireframes"/>
+            <div>
+            <p>You can see the final prototype <a href="https://www.figma.com/proto/IaGqO0QXluKNS9EkwtC6Ac/LanguageProject2.0-HiFi?type=design&node-id=1-6075&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A6075" target="_blank">here</a>.</p>
+            </div>
           </div>
+
+          <div className="section-content sc-flex-horizontal">
+          
+                <div className="sc-flex-item sc-flex-item-half lang-app-img">
+                <LightgalleryItem src={LangAppFinal1}>
+                <img src={LangAppFinal1}  alt="wireframes"/>
+                </LightgalleryItem>
+              </div>
+              <div className="sc-flex-item sc-flex-item-half lang-app-img">
+              <LightgalleryItem src={LangAppFinal2}>
+                <img src={LangAppFinal2}  alt="wireframes"/>
+              </LightgalleryItem>
+              </div>
+              </div>    
+              <div className="section-content sc-flex-horizontal">
+              <div className="sc-flex-item sc-flex-item-half lang-app-img">
+              <LightgalleryItem src={LangAppFinal3}>
+                <img src={LangAppFinal3}  alt="wireframes"/>
+              </LightgalleryItem>
+              </div>
+              <div className="sc-flex-item sc-flex-item-half lang-app-img">
+              <LightgalleryItem src={LangAppFinal4}>
+                <img src={LangAppFinal4}  alt="wireframes"/>
+              </LightgalleryItem>
+              </div>
+          
           </div>
         </div>
       </div>
@@ -270,7 +424,7 @@ const LangApp= () => {
 
       {/* Ninth section: Conclusion */}
    
-      <div className="project-section-outer">
+      <div className="project-section-outer ps-ten">
         <div className="project-section-inner">
           <div className="section-header"><h3>Conclusion</h3></div>
           <div className="section-content">
@@ -279,9 +433,9 @@ const LangApp= () => {
             <p>As this was my first UX project, I learned a lot. Some things I would do differently for an MVP:</p>
             <div>
               <ul>
-                <li>I would prioritize one or two features to develop instead of many. Addressing too many user needs at one made me feel like the project lacked focus and direction.</li>
+                <li>I would prioritize one or two features to develop instead of many. Addressing too many user needs at once made me feel like the project lacked focus and direction.</li>
                 <li>I would focus on creating user flows to better understand how users will interact with a feature.</li>
-                <li>I would be more specific in creating a persona. Although Jordan is a good representative of the target audience, explicitly calling out students as the target audience would have helped me think of more ideas to better help this group of people. This app would have more value if it was developed as an extention of a textbook.</li>
+                <li>I would be more specific in creating a persona. Although Jordan is a good representative of the target audience, explicitly calling out students as the target audience would have helped me think of more ideas to better help this group of people. This app would have more value if it was developed as an extension of a textbook.</li>
               </ul>
             </div>
           </div>

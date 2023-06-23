@@ -396,27 +396,6 @@ a:hover {
 }
 
 
-.ps-flex {
-  display: flex;
-
-}
-
-.flex-item.project-intro {
-  flex: 1 1 54%;
-  margin-right: 28px;
-}
-
-.flex-item.project-intro p {
-  /* text-align: justify; */
-  margin-top: 0px
-}
-
-
-.flex-item.lang-app-feature {
-  flex: 1 1 54%;
-  margin-right: 28px;
-}
-
 .project-container {
   display: grid;
   grid-column: 1/span 12;
@@ -508,28 +487,31 @@ margin:0px
   color: var(--accent)
 }
 
- .project-intro .banner h2 {
+.project-intro .banner h2 {
   margin-top: 0px;
   font-size: var(--project-intro-banner-font-size)
- } 
+} 
+
+.project-intro .flex-center-content {
+  align-items: flex-start;
+}
+
+.banner {
+  grid-column: 1/span 12;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-column-gap: 16px;
+}
+
+.banner .section-content.sc-flex-horizontal{
+  grid-column: 2/span 10
+}
 
 /* ///////////////////////////////////  IMAGES  /////////////////////////////// */
 .project-main-pic img {
-  border-radius: 20px;
   width: 100%;
 }
 
-.lang-app-img{
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom:20px
-}
-
-.lang-app-img img{
-  border-radius:20px;
-  max-width: 100%;
-  height: auto;
-}
 
 .project-intro-img img {
   width: 100%;
@@ -550,6 +532,46 @@ margin:0px
   margin: 40px 0px;
 }
 
+/* ////////////////////////////////////  RETO   /////////////////////////////////////// */
+
+
+.lang-app .unset-width .react_lightgallery_item img{
+  max-width: unset;
+  min-width: unset;
+  height: unset
+}
+
+.lang-app .sc-flex-horizontal.unset-width {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.lang-app .sc-flex-horizontal.unset-width .lang-app-img {
+  margin-bottom: 2em;
+  text-align: center
+}
+
+.lang-app .sc-flex-horizontal.unset-width.flex-three .lang-app-img {
+  flex: 1 0 33%;
+}
+
+.lang-app .sc-flex-horizontal.unset-width.flex-four .lang-app-img {
+  flex: 1 0 25%
+}
+.lang-app .sc-flex-horizontal.unset-width.flex-four .lang-app-img  img{
+  width: 80%
+}
+
+.lang-app .ps-three .lang-app-img.centered-txt img, .lang-app .ps-four .lang-app-img.centered-txt img {
+  max-width: 80%;
+  min-width: 80%;
+  text-align: center;
+}
+
+.lang-app .ps-three .lang-app-img.centered-txt, .lang-app .ps-four .lang-app-img.centered-txt{
+  margin: 32px 0
+}
 
 
 
@@ -580,13 +602,6 @@ margin:0px
   width: 56%;
 }
 
-.starbucks-sp .banner {
-  grid-column: 1/span 12;
-  display: grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-column-gap: 16px;
-}
-
 .starbucks-sp .ps-seven .banner {
   background-color: #006241;
   color: #fff
@@ -599,11 +614,6 @@ margin:0px
 
 .starbucks-sp .project-intro .content-background .react_lightgallery_item{
   background-color: #006241;
-}
-
-
-.starbucks-sp .banner .section-content.sc-flex-horizontal{
-  grid-column: 2/span 10
 }
 
 .starbucks-sp .ps-seven .content-background {
@@ -656,10 +666,6 @@ margin:0px
     height: 254px;
     max-width: 302px;
     }
-
-.starbucks-sp .project-intro .flex-center-content {
-  align-items: flex-start;
-}
 
 .starbucks-sp .ps-seven .banner .section-content.sc-flex-horizontal {
   grid-column: 1/span 12;
@@ -813,6 +819,10 @@ h4 {
   font-size: 1.4em;
 }
 
+.lang-app .sc-flex-horizontal.unset-width.flex-four .lang-app-img {
+  flex: unset
+}
+
 .project-intro .banner h2 {
   font-size: 2.5em;
 }
@@ -844,12 +854,12 @@ h4 {
 }
 
 
-.starbucks-sp .project-intro .banner-content {
+.project-intro .banner-content {
   padding:0px 0px 1.5em 0px;
   margin: var(--gutter)
 }
 
-.starbucks-sp .banner .section-content.sc-flex-horizontal{
+.banner .section-content.sc-flex-horizontal{
   grid-column: 1/span 12;
 }
 
@@ -857,7 +867,7 @@ h4 {
   margin: 2em 1em;
 }
 
-.starbucks-sp .details {
+.details {
   margin-top:28px
 }
 
@@ -1011,12 +1021,12 @@ h4 {
   margin: 0 auto;
 }
 
-.starbucks-sp .project-intro .banner-content {
+.project-intro .banner-content {
   padding:0px 0px 1.5em 0px;
   margin: var(--gutter)
 }
 
-.starbucks-sp .banner .section-content.sc-flex-horizontal{
+.banner .section-content.sc-flex-horizontal{
   grid-column: 1/span 12;
 }
 
@@ -1038,6 +1048,9 @@ h4 {
   flex-direction: row
 }
 
+.lang-app .ps-seven .sc-flex-horizontal {
+  flex-direction: row;
+}
 
 
 }

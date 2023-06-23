@@ -73,25 +73,6 @@ const StarbucksSharedPoints= () => {
             </div>
           </div>
         </div>
-        
-
-          {/* <div className="section-content sc-flex-horizontal">
-            <div className="project-intro-img sc-flex-item">
-              <img src={ SBMainStar }  alt="project main" />
-            </div>
-            <div className="sc-flex-item section-link">
-                <p><b>Solo | Concept Project</b></p>
-                <p><b>Role:</b> UX/UI Designer</p>
-                <p><b>Timeline:</b> One Week</p>
-                <p><b>Platform:</b> Mobile</p>
-                <p><b>Tools & Methods:</b> Pencil/Paper, Figma, <a href="https://creative.starbucks.com/" target="blank">Starbucks Design System Guide</a>, <a href="http://www.gv.com/sprint/" target="blank">Design Sprint</a></p>
-            </div>
-          </div> */}
-
-
-
-         
-     
       </div>
 
       {/* Second Section -- Project Overview */}

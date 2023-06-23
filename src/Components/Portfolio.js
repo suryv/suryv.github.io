@@ -82,7 +82,7 @@ const Portfolio = () => {
             </div>
             <div className="project-desc">
               <h3>Reto</h3>
-              <p>A language practice app tailored to each user's unique way of learning.</p>
+              <p>A language practice app with a game-like approach.</p>
               <Link to="/Portfolio/LangApp" >
                 <div class="button read-more">
                   <h4>Read More</h4>
