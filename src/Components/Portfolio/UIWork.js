@@ -2,23 +2,23 @@ import '../../App.css';
 import "lightgallery.js/dist/css/lightgallery.css";
 import { LightgalleryItem } from "react-lightgallery";
 
-import UI1 from "../../Assets/UI1.jpg"
-import UI2 from "../../Assets/UI2.png"
-import UI3 from "../../Assets/UI3.png"
-import UI3a from "../../Assets/UI3a.png"
-import UI4 from "../../Assets/UI4.png"
-import UI4a from "../../Assets/UI4a.png"
-import UI5 from "../../Assets/UI5.png"
-import UI6 from "../../Assets/UI6.png"
-import UI6a from "../../Assets/UI6a.png"
-import UI7 from "../../Assets/UI7.png"
-import UI8 from "../../Assets/UI8.png"
-import UI9 from "../../Assets/UI9.png"
+import UI1 from "../../Assets/UIWork/UI1.jpg"
+import UI2 from "../../Assets/UIWork/UI2.png"
+import UI3 from "../../Assets/UIWork/UI3.png"
+import UI3a from "../../Assets/UIWork/UI3a.png"
+import UI4 from "../../Assets/UIWork/UI4.png"
+import UI4a from "../../Assets/UIWork/UI4a.png"
+import UI5 from "../../Assets/UIWork/UI5.png"
+import UI6 from "../../Assets/UIWork/UI6.png"
+import UI6a from "../../Assets/UIWork/UI6a.png"
+import UI7 from "../../Assets/UIWork/UI7.png"
+import UI8 from "../../Assets/UIWork/UI8.png"
+import UI9 from "../../Assets/UIWork/UI9.png"
 
 const UIWork= () => {
   return (
-    <div className="sub-content ui-work">
-      <div className="ui-work-text">
+    <div className="sub-content  ui-work">
+      <div className="section-content ui-work-text">
         <h2>Selected UI designs</h2>
         <div className="large-txt">Click on images to see the full designs. Visit my <a href="https://www.dribbble.com/sury_villalobos" target="_blank">Dribbble profile</a> to see the rest of the collection.</div>
       </div>

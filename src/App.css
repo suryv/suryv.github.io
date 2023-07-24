@@ -185,7 +185,6 @@ a:hover {
 .sub-content {
   grid-column: 2/span 10;
   grid-row:2;
-  margin-top:40px
 }
 
 
@@ -200,7 +199,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 40px
 }
 
@@ -487,7 +486,7 @@ margin:0px
   color: var(--accent)
 }
 
-.project-intro .banner h2 {
+.project-intro .banner h2, .ui-work h2 {
   margin-top: 0px;
   font-size: var(--project-intro-banner-font-size)
 } 
@@ -618,7 +617,7 @@ margin:0px
 
 .starbucks-sp .ps-seven .content-background {
   background-color: #cbe2db;
-  background-image: url("./Assets/sb_bg_stars.png");
+  background-image: url("./Assets/SBStars/sb_bg_stars.png");
 }
 
 .starbucks-sp .button-one a, .starbucks-sp .button-one a, .starbucks-sp .button-one a:visited {
@@ -776,7 +775,7 @@ margin:0px
 
 .project-list{
   flex-direction:column;
-  margin: 5vh 0px 0px 0px
+  margin: 20px 0px 0px 0px
 }
 
 .project-list .project {
@@ -823,7 +822,7 @@ h4 {
   flex: unset
 }
 
-.project-intro .banner h2 {
+.project-intro .banner h2, .ui-work h2 {
   font-size: 2.5em;
 }
 
@@ -890,6 +889,10 @@ h4 {
   width: 80%;
 }
 
+.section-content.ui-work-text {
+  margin-top: 0px
+}
+
 }
 
 
@@ -953,7 +956,7 @@ h4 {
 }
 
 .sub-content.portfolio {
-  margin: 0px 2em !important;
+  margin: 20px 2em !important;
 }
 
 .project-list {
@@ -963,7 +966,7 @@ h4 {
 }
 
 .project-list .project {
-  margin: 0 0 2em
+  margin: 0px
 }
 
 .img-description {

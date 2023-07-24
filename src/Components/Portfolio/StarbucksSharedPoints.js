@@ -2,20 +2,20 @@ import '../../App.css';
 import "lightgallery.js/dist/css/lightgallery.css";
 import { LightgalleryItem } from "react-lightgallery";
 
-import SBMap from "../../Assets/sb_map.png";
-import SBStoryboard1 from "../../Assets/sb_storyboard1.png"
-import SBStoryboard2 from "../../Assets/sb_storyboard2.png"
-import SBStoryboard3 from "../../Assets/sb_storyboard3.png"
-import SBStoryboard4 from "../../Assets/sb_storyboard4.png"
-import SBFlow from "../../Assets/sb_flows1.png"
-import SBMainStar from "../../Assets/sb_main.png"
-import SBMidFi from "../../Assets/sbstars_midfid_prototype.gif"
-import SBHiFi from "../../Assets/sbstars_hifid_prototype.gif"
-import SBFinal from "../../Assets/sb_finaldesign.png"
-import SBHiFi1 from "../../Assets/sb_hifi_1.png"
-import SBHiFi2 from "../../Assets/sb_hifi_2.png"
-import SBHiFi3 from "../../Assets/sb_hifi_3.png"
-import SBHiFi4 from "../../Assets/sb_hifi_4.png"
+import SBMap from "../../Assets/SBStars/sb_map.png";
+import SBStoryboard1 from "../../Assets/SBStars/sb_storyboard1.png"
+import SBStoryboard2 from "../../Assets/SBStars/sb_storyboard2.png"
+import SBStoryboard3 from "../../Assets/SBStars/sb_storyboard3.png"
+import SBStoryboard4 from "../../Assets/SBStars/sb_storyboard4.png"
+import SBFlow from "../../Assets/SBStars/sb_flows1.png"
+import SBMainStar from "../../Assets/SBStars/sb_main.png"
+import SBMidFi from "../../Assets/SBStars/sbstars_midfid_prototype.gif"
+import SBHiFi from "../../Assets/SBStars/sbstars_hifid_prototype.gif"
+import SBFinal from "../../Assets/SBStars/sb_finaldesign.png"
+import SBHiFi1 from "../../Assets/SBStars/sb_hifi_1.png"
+import SBHiFi2 from "../../Assets/SBStars/sb_hifi_2.png"
+import SBHiFi3 from "../../Assets/SBStars/sb_hifi_3.png"
+import SBHiFi4 from "../../Assets/SBStars/sb_hifi_4.png"
 
 import React from 'react';
 
